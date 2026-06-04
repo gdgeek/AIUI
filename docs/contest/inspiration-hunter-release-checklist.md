@@ -58,6 +58,7 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 ```text
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-final-release-evidence.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-judge-scorecard.md
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-cn-one-pager.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.pptx
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission-pack.md

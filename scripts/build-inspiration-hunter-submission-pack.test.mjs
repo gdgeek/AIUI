@@ -24,6 +24,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "01-InspirationHunter-icon.png",
     "02-InspirationHunter-v0.1.0.aix",
     "03-InspirationHunter-pitch-deck.pptx",
+    "03a-cn-judge-one-pager.md",
     "04-contest-submission.md",
     "05-demo-runbook.md",
     "06-release-checklist.md",
@@ -54,4 +55,9 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.match(uploadGuide, /agent程序包/);
   assert.match(uploadGuide, /01-InspirationHunter-icon\.png/);
   assert.match(uploadGuide, /02-InspirationHunter-v0\.1\.0\.aix/);
+
+  const chineseBrief = await fs.readFile(path.join(outputDir, "03a-cn-judge-one-pager.md"), "utf8");
+  assert.match(chineseBrief, /灵感猎手/);
+  assert.match(chineseBrief, /90 秒路演话术/);
+  assert.match(chineseBrief, /不是把聊天机器人搬到眼镜上/);
 });

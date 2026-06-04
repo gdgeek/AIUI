@@ -34,13 +34,14 @@ Use this order when submitting or uploading:
 2. `01-InspirationHunter-icon.png`
 3. `02-InspirationHunter-v0.1.0.aix`
 4. `03-InspirationHunter-pitch-deck.pptx`
-5. `04-contest-submission.md`
-6. `05-demo-runbook.md`
-7. `06-release-checklist.md`
-8. `07-judge-scorecard.md`
-9. `08-final-release-evidence.md`
-10. `09-lingzhu-aiui-release-handoff.md`
-11. `manifest.json`
+5. `03a-cn-judge-one-pager.md`
+6. `04-contest-submission.md`
+7. `05-demo-runbook.md`
+8. `06-release-checklist.md`
+9. `07-judge-scorecard.md`
+10. `08-final-release-evidence.md`
+11. `09-lingzhu-aiui-release-handoff.md`
+12. `manifest.json`
 
 ## Lingzhu Upload Fields
 
@@ -52,6 +53,17 @@ agent程序包: 02-InspirationHunter-v0.1.0.aix
 ```
 
 The pack builder verifies these files against `docs/contest/inspiration-hunter-release-manifest.json` before writing the bundle.
+
+## Judge Materials
+
+Use `03a-cn-judge-one-pager.md` when the reviewer or event context is Chinese-first. It includes Chinese content with an ASCII file name for safer upload and zip compatibility:
+
+- the one-line Chinese product pitch
+- the AI glasses fit argument
+- a 60-second demo rhythm
+- a 90-second spoken pitch
+- likely judge Q&A
+- the closing line for live presentation
 
 ## Why This Pack Exists
 

@@ -29,6 +29,11 @@ const PACK_FILES = [
     role: "Contest presentation deck",
   },
   {
+    name: "03a-cn-judge-one-pager.md",
+    source: "docs/contest/inspiration-hunter-cn-one-pager.md",
+    role: "Chinese judge-facing one-pager and 90-second pitch",
+  },
+  {
     name: "04-contest-submission.md",
     source: "docs/contest/inspiration-hunter-submission.md",
     role: "Judge-facing submission brief",
