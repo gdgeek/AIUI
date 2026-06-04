@@ -34,6 +34,11 @@ const PACK_FILES = [
     role: "Chinese judge-facing one-pager and 90-second pitch",
   },
   {
+    name: "03b-award-defense.md",
+    source: "docs/contest/inspiration-hunter-award-defense.md",
+    role: "Judge Q&A, hardware-fit defense, and demo fallback script",
+  },
+  {
     name: "04-contest-submission.md",
     source: "docs/contest/inspiration-hunter-submission.md",
     role: "Judge-facing submission brief",

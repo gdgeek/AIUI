@@ -105,11 +105,11 @@ If network becomes unreliable:
 - Use the already packaged AIX result panel if available.
 - Present the local source and package status from the deployment guide.
 
-If `上传到灵珠` is disabled:
+If `上传到灵珠` or `提交提审` is unavailable:
 
-- Explain that Craft packaging has succeeded.
-- Bind or create a Lingzhu AIUI agent before final online release.
-- Continue with the downloaded AIX package or the Craft packaging result as the handoff artifact.
+- Explain the current release gate precisely: packaging succeeded, version `1.0.1` was uploaded and submitted, or the platform action is temporarily unavailable.
+- Show the Lingzhu `审核中` evidence if review has already been submitted.
+- Continue with the verified Craft runtime, downloaded AIX package, screenshots, and release evidence as the handoff artifact.
 
 ## Judge Q&A
 

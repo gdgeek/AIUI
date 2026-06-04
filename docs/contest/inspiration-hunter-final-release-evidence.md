@@ -51,7 +51,7 @@ The Lingzhu AIUI agent has been created and Craft has been reopened with the bou
 
 ```text
 智能体名称: InspirationHunter
-智能体版本: 1.0.0
+智能体版本: 1.0.1
 类别: 娱乐
 功能介绍: Turn real objects into clues stories and mini challenges for creative exploration on Rokid glasses.
 开场白: Say start to hunt for inspiration.

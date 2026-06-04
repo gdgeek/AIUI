@@ -9,7 +9,7 @@ const root = resolve(new URL('..', import.meta.url).pathname);
 const forceRebuild = process.env.AIX_VERIFY_REBUILD === '1';
 
 const expected = {
-  sourceAppCommit: '13e12282042914a84ac12abe318aa238cebb00a7',
+  sourceAppCommit: '988f3d85a45ab813a529d7a751941a94e063bc7d',
   icon: {
     path: 'apps/inspiration-hunter/assets/icon.png',
     bytes: 203673,

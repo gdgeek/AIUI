@@ -1,7 +1,7 @@
 {
   "project": "Inspiration Hunter",
   "generatedAt": "2026-06-04",
-  "sourceAppCommit": "13e12282042914a84ac12abe318aa238cebb00a7",
+  "sourceAppCommit": "988f3d85a45ab813a529d7a751941a94e063bc7d",
   "craftImportUrl": "https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter",
   "releaseFiles": {
     "icon": {
@@ -34,7 +34,7 @@
   },
   "lingzhuAgentDraft": {
     "name": "InspirationHunter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "category": "娱乐",
     "intro": "Turn real objects into clues stories and mini challenges for creative exploration on Rokid glasses.",
     "greeting": "Say start to hunt for inspiration.",

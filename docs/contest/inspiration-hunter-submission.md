@@ -96,14 +96,12 @@ The package result is visible in the Craft packaging panel. A local AIX candidat
 /Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
 ```
 
-The `上传到灵珠` action remains disabled until a Lingzhu AIUI agent is bound in Craft.
+The latest Craft package was uploaded to the bound Lingzhu AIUI agent as version `1.0.1`, and `提交提审` succeeded. Lingzhu currently shows `InspirationHunter` as `审核中`.
 
 ## Next Release Step
 
-Create or bind a Lingzhu AIUI agent in Craft, upload the local PNG icon and AIX package, then use the package panel action `上传到灵珠` to complete the online release flow.
-
-Required icon:
+Wait for Lingzhu review to leave `审核中`, then run the post-review launch checklist and verify the app on the official launch surface or target Rokid Glasses hardware.
 
 ```text
-/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-post-review-launch-checklist.md
 ```

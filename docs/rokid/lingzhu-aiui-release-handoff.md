@@ -34,10 +34,11 @@ Current agent status:
 
 ```text
 智能体名称: InspirationHunter
-智能体版本: 1.0.0
+智能体版本: 1.0.1
 Lingzhu agent ID: 7c5ebbe8edc04f1fa09b6bf9c59a3f26
-Craft review flow: Step 2/2, ready for version notes and 提交提审 after final runtime testing
-Important: local AIX was rebuilt after adding AI glasses key and hands-free interaction. Re-upload if Lingzhu still points to an earlier package md5.
+Craft review flow: 提交提审 succeeded
+Lingzhu status: 审核中
+Important: local AIX was rebuilt after adding AI glasses key and hands-free interaction. Version 1.0.1 is the submitted review target.
 ```
 
 The form accepts:
@@ -82,7 +83,7 @@ Use these values for the AIUI agent:
 
 ```text
 智能体名称: InspirationHunter
-智能体版本: 1.0.0
+智能体版本: 1.0.1
 类别: 娱乐
 功能介绍: Turn real objects into clues stories and mini challenges for creative exploration on Rokid glasses.
 开场白: Say start to hunt for inspiration.

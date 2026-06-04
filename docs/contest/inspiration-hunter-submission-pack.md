@@ -35,17 +35,22 @@ Use this order when submitting or uploading:
 3. `02-InspirationHunter-v0.1.0.aix`
 4. `03-InspirationHunter-pitch-deck.pptx`
 5. `03a-cn-judge-one-pager.md`
-6. `04-contest-submission.md`
-7. `05-demo-runbook.md`
-8. `06-release-checklist.md`
-9. `07-judge-scorecard.md`
-10. `08-final-release-evidence.md`
-11. `09-lingzhu-aiui-release-handoff.md`
-12. `10-demo-storyboard.svg`
-13. `11-aiui-craft-lingzhu-project-playbook.md`
-14. `12-aiui-craft-lingzhu-end-to-end-zh.md`
-15. `13-rokid-glasses-device-constraints.md`
-16. `manifest.json`
+6. `03b-award-defense.md`
+7. `04-contest-submission.md`
+8. `05-demo-runbook.md`
+9. `06-release-checklist.md`
+10. `07-judge-scorecard.md`
+11. `08-final-release-evidence.md`
+12. `09-lingzhu-aiui-release-handoff.md`
+13. `10-demo-storyboard.svg`
+14. `11-aiui-craft-lingzhu-project-playbook.md`
+15. `12-aiui-craft-lingzhu-end-to-end-zh.md`
+16. `13-rokid-glasses-device-constraints.md`
+17. `14-post-review-launch-checklist.md`
+18. `15-craft-glasses-discovery.png`
+19. `16-craft-glasses-final.png`
+20. `17-lingzhu-review-status.png`
+21. `manifest.json`
 
 ## Lingzhu Upload Fields
 
@@ -68,6 +73,8 @@ Use `03a-cn-judge-one-pager.md` when the reviewer or event context is Chinese-fi
 - a 90-second spoken pitch
 - likely judge Q&A
 - the closing line for live presentation
+
+Use `03b-award-defense.md` as the hard-question playbook. It covers why the app can win, how to explain the semi-real recognition strategy, how the design maps to Rokid Glasses hardware constraints, and what not to claim while Lingzhu remains `审核中`.
 
 Use `10-demo-storyboard.svg` as a visual companion when reviewers need to understand the app before opening Craft. It is a storyboard derived from the implemented demo flow, not a device screenshot.
 
