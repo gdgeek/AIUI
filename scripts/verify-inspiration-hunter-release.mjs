@@ -17,8 +17,8 @@ const expected = {
   },
   aix: {
     path: 'artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix',
-    bytes: 210294,
-    sha256: 'a6ab2dde6663013406e2edf98c2dda0eb33f982383d701efa9014edbe2ab1e09',
+    bytes: 210506,
+    sha256: '6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4',
     title: 'Inspiration Hunter',
     version: '0.1.0',
     pages: [

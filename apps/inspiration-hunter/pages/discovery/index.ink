@@ -88,19 +88,21 @@ export default {
       <text class="summary">{{ insight }}</text>
     </view>
 
-    <view class="info-card">
-      <text class="card-label">为什么值得看</text>
-      <text class="card-copy">{{ whyItMatters }}</text>
-    </view>
+    <view class="info-stack">
+      <view class="info-card">
+        <text class="card-label">为什么值得看</text>
+        <text class="card-copy">{{ whyItMatters }}</text>
+      </view>
 
-    <view class="info-card">
-      <text class="card-label">故事背景</text>
-      <text class="card-copy">{{ story }}</text>
-    </view>
+      <view class="info-card" ink:if="{{ expanded }}">
+        <text class="card-label">深挖结果</text>
+        <text class="card-copy">{{ deepDive }}</text>
+      </view>
 
-    <view class="info-card" ink:if="{{ expanded }}">
-      <text class="card-label">深挖结果</text>
-      <text class="card-copy">{{ deepDive }}</text>
+      <view class="info-card" ink:else>
+        <text class="card-label">故事背景</text>
+        <text class="card-copy">{{ story }}</text>
+      </view>
     </view>
 
     <view class="action-row">
@@ -113,11 +115,14 @@ export default {
 
 <style>
 .screen {
-  min-height: 100vh;
+  height: 150px;
+  width: 448px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding: 20px;
+  align-items: stretch;
+  gap: 8px;
+  padding: 8px;
+  overflow: hidden;
   background:
     radial-gradient(circle at top right, rgba(92, 200, 255, 0.16), transparent 34%),
     linear-gradient(180deg, rgba(2, 8, 18, 0.98), rgba(8, 17, 32, 0.98));
@@ -126,57 +131,78 @@ export default {
 .header-card,
 .info-card {
   border: 1px solid rgba(98, 255, 220, 0.26);
-  border-radius: 18px;
-  padding: 18px;
+  border-radius: 14px;
+  padding: 9px;
   background: rgba(8, 20, 36, 0.82);
   box-shadow: 0 0 18px rgba(98, 255, 220, 0.08);
+}
+
+.header-card {
+  flex: 1.08;
+  min-width: 0;
+}
+
+.info-stack {
+  flex: 1.42;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info-card {
+  flex: 1;
+  min-height: 0;
 }
 
 .eyebrow,
 .card-label {
   color: #69f7d6;
-  font-size: 12px;
-  letter-spacing: 1.4px;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .title {
   display: block;
-  margin-top: 8px;
+  margin-top: 5px;
   color: #ffffff;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 17px;
+  line-height: 19px;
   font-weight: 700;
 }
 
 .meta {
   display: block;
-  margin-top: 6px;
+  margin-top: 4px;
   color: rgba(105, 247, 214, 0.9);
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .summary,
 .card-copy {
   display: block;
-  margin-top: 10px;
+  margin-top: 4px;
   color: rgba(228, 248, 245, 0.84);
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .action-row {
+  width: 88px;
+  flex: none;
   display: flex;
-  gap: 10px;
-  margin-top: auto;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .ghost-button,
 .primary-button {
   flex: 1;
-  border-radius: 14px;
-  font-size: 15px;
-  line-height: 22px;
-  padding: 10px 8px;
+  margin: 0;
+  border-radius: 11px;
+  font-size: 11px;
+  line-height: 15px;
+  padding: 4px 6px;
 }
 
 .ghost-button {

@@ -51,7 +51,7 @@ export default {
     <view class="hero-panel">
       <text class="eyebrow">FUTURE EXPLORER</text>
       <text class="title">灵感猎手</text>
-      <text class="subtitle">看见现实，立即展开一场 AI 探索。</text>
+      <text class="subtitle">看见现实，立即展开 AI 探索。</text>
     </view>
 
     <view class="scanner-panel">
@@ -67,22 +67,24 @@ export default {
       </view>
     </view>
 
-    <view class="intel-panel">
+    <view class="action-row">
       <text class="panel-title">猎手提示</text>
-      <text class="panel-copy">检测到高故事价值目标，建议立即展开解析，进入沉浸式探索界面。</text>
+      <text class="panel-copy">高故事价值目标已锁定。</text>
+      <button class="primary-button" bindtap="beginDiscovery">开始解析</button>
     </view>
-
-    <button class="primary-button" bindtap="beginDiscovery">开始解析</button>
   </view>
 </page>
 
 <style>
 .screen {
-  min-height: 100vh;
+  height: 150px;
+  width: 448px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding: 20px;
+  align-items: stretch;
+  gap: 8px;
+  padding: 8px;
+  overflow: hidden;
   background:
     linear-gradient(180deg, rgba(2, 8, 18, 0.98), rgba(6, 17, 34, 0.98)),
     #020611;
@@ -90,49 +92,57 @@ export default {
 
 .hero-panel,
 .scanner-panel,
-.intel-panel {
+.action-row {
   border: 1px solid rgba(82, 255, 209, 0.28);
-  border-radius: 18px;
-  padding: 18px;
+  border-radius: 14px;
+  padding: 10px;
   background: rgba(10, 23, 40, 0.78);
   box-shadow: 0 0 18px rgba(82, 255, 209, 0.12);
 }
 
+.hero-panel {
+  flex: 1.05;
+  min-width: 0;
+}
+
 .eyebrow {
   color: #67f7d0;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 10px;
+  letter-spacing: 1.4px;
   opacity: 0.92;
 }
 
 .title {
   display: block;
-  margin-top: 10px;
+  margin-top: 6px;
   color: #f2fffd;
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: 700;
 }
 
 .subtitle {
   display: block;
-  margin-top: 10px;
+  margin-top: 6px;
   color: rgba(214, 255, 249, 0.8);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 15px;
 }
 
 .scanner-panel {
+  flex: 1.35;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+  min-width: 0;
 }
 
 .scanner-ring {
-  width: 122px;
-  height: 122px;
-  border-radius: 61px;
+  width: 58px;
+  height: 58px;
+  border-radius: 29px;
   border: 2px solid #61ffd7;
+  flex: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,28 +151,29 @@ export default {
 
 .scanner-ring-text {
   color: #61ffd7;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 700;
 }
 
 .target-card {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 3px;
 }
 
 .target-label,
 .panel-title {
   color: rgba(103, 247, 208, 0.94);
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
 }
 
 .target-title {
   color: #ffffff;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 19px;
   font-weight: 700;
 }
 
@@ -170,19 +181,28 @@ export default {
 .target-status,
 .panel-copy {
   color: rgba(227, 248, 244, 0.82);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.action-row {
+  width: 96px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 .primary-button {
-  margin-top: auto;
+  margin: 0;
   background: linear-gradient(90deg, #61ffd7, #5cc8ff);
   color: #031219;
-  border-radius: 16px;
-  font-size: 16px;
+  border-radius: 12px;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 24px;
-  padding: 10px 18px;
+  line-height: 18px;
+  padding: 6px 8px;
   border: none;
 }
 </style>

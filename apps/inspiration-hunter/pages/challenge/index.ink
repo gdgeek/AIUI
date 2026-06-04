@@ -80,11 +80,14 @@ export default {
 
 <style>
 .screen {
-  min-height: 100vh;
+  height: 150px;
+  width: 448px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 20px;
+  align-items: stretch;
+  gap: 8px;
+  padding: 8px;
+  overflow: hidden;
   background:
     radial-gradient(circle at center, rgba(105, 247, 214, 0.12), transparent 42%),
     linear-gradient(180deg, rgba(2, 8, 18, 0.98), rgba(8, 18, 34, 0.98));
@@ -93,25 +96,35 @@ export default {
 .challenge-card,
 .answer-card {
   border: 1px solid rgba(92, 200, 255, 0.28);
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 14px;
+  padding: 10px;
   background: rgba(9, 22, 39, 0.84);
   box-shadow: 0 0 20px rgba(92, 200, 255, 0.09);
+}
+
+.challenge-card {
+  flex: 1.18;
+  min-width: 0;
+}
+
+.answer-card {
+  flex: 1.22;
+  min-width: 0;
 }
 
 .eyebrow,
 .answer-label {
   color: #5cc8ff;
-  font-size: 12px;
-  letter-spacing: 1.6px;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .title {
   display: block;
-  margin-top: 10px;
+  margin-top: 5px;
   color: #ffffff;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 19px;
+  line-height: 21px;
   font-weight: 700;
 }
 
@@ -119,32 +132,35 @@ export default {
 .answer-copy,
 .answer-text {
   display: block;
-  margin-top: 12px;
+  margin-top: 6px;
   color: rgba(230, 248, 255, 0.85);
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 10px;
+  line-height: 14px;
 }
 
 .answer-text {
   color: #73ffd9;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 18px;
   font-weight: 700;
 }
 
 .action-row {
+  width: 88px;
+  flex: none;
   display: flex;
-  gap: 10px;
-  margin-top: auto;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .ghost-button,
 .primary-button {
   flex: 1;
-  border-radius: 14px;
-  font-size: 15px;
-  line-height: 22px;
-  padding: 10px 8px;
+  margin: 0;
+  border-radius: 11px;
+  font-size: 11px;
+  line-height: 15px;
+  padding: 5px 6px;
 }
 
 .ghost-button {
