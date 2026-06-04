@@ -101,6 +101,10 @@ Do not call the project fully published until these are true:
 
 The Lingzhu file upload and agent creation steps are complete. The remaining release gate is to make Craft load the latest pushed 448x150 source, run the golden path visually, then submit review from the bound `defaultAgentId` session.
 
+Current verification pass:
+
+- 2026-06-04: re-import the latest GitHub source in Craft, then verify the 448x150 runtime before checking off the remaining release items.
+
 If Craft still shows the old tall layout, re-import:
 
 ```text

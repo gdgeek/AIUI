@@ -45,6 +45,21 @@ test("Inspiration Hunter pages fit the 448x150 glasses preview viewport", async 
       /\.action-row\s*\{[^}]*display\s*:\s*flex/s,
       `${page.path} should expose actions in a compact visible row`,
     );
+    assert.match(
+      source,
+      /\.screen\s*\{[^}]*position\s*:\s*relative/s,
+      `${page.path} should use absolute child placement within the 448x150 Craft preview`,
+    );
+    assert.match(
+      source,
+      /\.action-row\s*\{[^}]*position\s*:\s*absolute/s,
+      `${page.path} should pin critical actions inside the visible Craft preview`,
+    );
+    assert.match(
+      source,
+      /\.action-row\s*\{[^}]*right\s*:\s*8px/s,
+      `${page.path} should keep actions anchored to the visible right edge`,
+    );
 
     for (const label of page.requiredLabels) {
       assert.match(source, new RegExp(label), `${page.path} should keep ${label} visible in the flow`);

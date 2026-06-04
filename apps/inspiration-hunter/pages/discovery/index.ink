@@ -118,10 +118,7 @@ export default {
   height: 150px;
   width: 448px;
   box-sizing: border-box;
-  display: flex;
-  align-items: stretch;
-  gap: 8px;
-  padding: 8px;
+  position: relative;
   overflow: hidden;
   background:
     radial-gradient(circle at top right, rgba(92, 200, 255, 0.16), transparent 34%),
@@ -130,6 +127,7 @@ export default {
 
 .header-card,
 .info-card {
+  box-sizing: border-box;
   border: 1px solid rgba(98, 255, 220, 0.26);
   border-radius: 14px;
   padding: 9px;
@@ -138,21 +136,25 @@ export default {
 }
 
 .header-card {
-  flex: 1.08;
-  min-width: 0;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 132px;
+  height: 134px;
 }
 
 .info-stack {
-  flex: 1.42;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  position: absolute;
+  left: 148px;
+  top: 8px;
+  width: 196px;
+  height: 134px;
 }
 
 .info-card {
-  flex: 1;
-  min-height: 0;
+  height: 64px;
+  margin-bottom: 6px;
+  overflow: hidden;
 }
 
 .eyebrow,
@@ -188,8 +190,11 @@ export default {
 }
 
 .action-row {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   width: 88px;
-  flex: none;
+  height: 134px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -197,8 +202,10 @@ export default {
 
 .ghost-button,
 .primary-button {
-  flex: 1;
+  display: block;
+  height: 38px;
   margin: 0;
+  margin-bottom: 5px;
   border-radius: 11px;
   font-size: 11px;
   line-height: 15px;

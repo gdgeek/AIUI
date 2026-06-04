@@ -72,6 +72,14 @@ jsui包工具: generated for all three AIUI pages
 
 The latest local source and AIX were updated after a 448x150 Craft preview fix. Final evidence must prove Craft is running that latest layout, not the earlier tall layout.
 
+Current local AIX after the absolute-position layout fix:
+
+```text
+文件md5值: 364d4eb535da19405a7e55b3566442c2
+sha256: ae4732fc3d506275730763d36c55e3eddf13b722e3a9593b7324cdcd13c26c12
+bytes: 210586
+```
+
 ## Final Release Steps
 
 1. In Craft, re-import the GitHub subdirectory if the preview still shows the old tall layout.

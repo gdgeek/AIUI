@@ -37,7 +37,7 @@ Current agent status:
 智能体版本: 1.0.0
 Lingzhu agent ID: 7c5ebbe8edc04f1fa09b6bf9c59a3f26
 Craft review flow: Step 2/2, ready for version notes and 提交提审 after final runtime testing
-Important: local AIX was rebuilt after the 448x150 viewport fix. Re-upload if Lingzhu still points to the earlier package md5.
+Important: local AIX was rebuilt after the absolute-position 448x150 viewport fix. Re-upload if Lingzhu still points to an earlier package md5.
 ```
 
 The form accepts:
@@ -71,9 +71,9 @@ The AIX candidate includes:
 Current local AIX identity:
 
 ```text
-md5: 7f892baf3010841e8f1e3b1ac2d5059a
-sha256: 6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4
-bytes: 210506
+md5: 364d4eb535da19405a7e55b3566442c2
+sha256: ae4732fc3d506275730763d36c55e3eddf13b722e3a9593b7324cdcd13c26c12
+bytes: 210586
 ```
 
 ## Recommended Lingzhu Form Values
@@ -117,7 +117,7 @@ jsui包页面: pages/index/index, pages/discovery/index, pages/challenge/index
 jsui包工具: generated for all three AIUI pages
 ```
 
-If Lingzhu still shows `d032ae84aff3df9be8732cef53f0768d`, the platform is still referencing the pre-viewport-fix package. Re-upload `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix` and confirm the md5 updates before final review submission.
+If Lingzhu still shows `d032ae84aff3df9be8732cef53f0768d` or `7f892baf3010841e8f1e3b1ac2d5059a`, the platform is still referencing a pre-absolute-position package. Re-upload `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix` and confirm the md5 updates before final review submission.
 
 ## Codex Browser Upload Limitation
 

@@ -83,10 +83,7 @@ export default {
   height: 150px;
   width: 448px;
   box-sizing: border-box;
-  display: flex;
-  align-items: stretch;
-  gap: 8px;
-  padding: 8px;
+  position: relative;
   overflow: hidden;
   background:
     radial-gradient(circle at center, rgba(105, 247, 214, 0.12), transparent 42%),
@@ -95,6 +92,8 @@ export default {
 
 .challenge-card,
 .answer-card {
+  position: absolute;
+  box-sizing: border-box;
   border: 1px solid rgba(92, 200, 255, 0.28);
   border-radius: 14px;
   padding: 10px;
@@ -103,13 +102,18 @@ export default {
 }
 
 .challenge-card {
-  flex: 1.18;
-  min-width: 0;
+  left: 8px;
+  top: 8px;
+  width: 152px;
+  height: 134px;
 }
 
 .answer-card {
-  flex: 1.22;
-  min-width: 0;
+  left: 168px;
+  top: 8px;
+  width: 176px;
+  height: 134px;
+  overflow: hidden;
 }
 
 .eyebrow,
@@ -146,8 +150,11 @@ export default {
 }
 
 .action-row {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   width: 88px;
-  flex: none;
+  height: 134px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -155,8 +162,10 @@ export default {
 
 .ghost-button,
 .primary-button {
-  flex: 1;
+  display: block;
+  height: 60px;
   margin: 0;
+  margin-bottom: 6px;
   border-radius: 11px;
   font-size: 11px;
   line-height: 15px;

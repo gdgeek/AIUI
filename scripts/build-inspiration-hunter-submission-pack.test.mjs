@@ -51,7 +51,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.equal(manifest.project, "Inspiration Hunter");
   assert.equal(manifest.lingzhuAgentDraft.name, "InspirationHunter");
   assert.equal(manifest.uploadFiles.icon.sha256, "d007f489dfb4c3727b7e67552fe6255c21fdc624e5841dae550a92cc416c4ee1");
-  assert.equal(manifest.uploadFiles.aix.sha256, "6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4");
+  assert.equal(manifest.uploadFiles.aix.sha256, "ae4732fc3d506275730763d36c55e3eddf13b722e3a9593b7324cdcd13c26c12");
 
   const uploadGuide = await fs.readFile(path.join(outputDir, "00-UPLOAD-FIRST.txt"), "utf8");
   assert.match(uploadGuide, /图标/);

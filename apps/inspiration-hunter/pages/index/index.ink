@@ -80,10 +80,7 @@ export default {
   height: 150px;
   width: 448px;
   box-sizing: border-box;
-  display: flex;
-  align-items: stretch;
-  gap: 8px;
-  padding: 8px;
+  position: relative;
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(2, 8, 18, 0.98), rgba(6, 17, 34, 0.98)),
@@ -93,6 +90,8 @@ export default {
 .hero-panel,
 .scanner-panel,
 .action-row {
+  position: absolute;
+  box-sizing: border-box;
   border: 1px solid rgba(82, 255, 209, 0.28);
   border-radius: 14px;
   padding: 10px;
@@ -101,8 +100,10 @@ export default {
 }
 
 .hero-panel {
-  flex: 1.05;
-  min-width: 0;
+  left: 8px;
+  top: 8px;
+  width: 136px;
+  height: 134px;
 }
 
 .eyebrow {
@@ -130,19 +131,20 @@ export default {
 }
 
 .scanner-panel {
-  flex: 1.35;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
+  left: 152px;
+  top: 8px;
+  width: 184px;
+  height: 134px;
 }
 
 .scanner-ring {
+  position: absolute;
+  left: 10px;
+  top: 38px;
   width: 58px;
   height: 58px;
   border-radius: 29px;
   border: 2px solid #61ffd7;
-  flex: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,11 +158,10 @@ export default {
 }
 
 .target-card {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+  position: absolute;
+  left: 78px;
+  top: 22px;
+  width: 92px;
 }
 
 .target-label,
@@ -186,8 +187,10 @@ export default {
 }
 
 .action-row {
+  right: 8px;
+  top: 8px;
   width: 96px;
-  flex: none;
+  height: 134px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

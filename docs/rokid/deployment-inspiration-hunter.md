@@ -18,7 +18,7 @@ Date: 2026-06-04
 - Craft reopened with the bound Lingzhu agent ID in `defaultAgentId`
 - Craft `提审` reaches the bound-agent confirmation flow
 - the local app and AIX candidate have been updated for the 448x150 Craft preview viewport
-- the latest local AIX candidate has md5 `7f892baf3010841e8f1e3b1ac2d5059a` and sha256 `6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4`
+- the latest local AIX candidate has md5 `364d4eb535da19405a7e55b3566442c2` and sha256 `ae4732fc3d506275730763d36c55e3eddf13b722e3a9593b7324cdcd13c26c12`
 
 Current known limitations:
 
@@ -166,12 +166,12 @@ jsui包页面: pages/index/index, pages/discovery/index, pages/challenge/index
 jsui包工具: generated for all three AIUI pages
 ```
 
-Current local package after the 448x150 fix:
+Current local package after the absolute-position 448x150 fix:
 
 ```text
-文件md5值: 7f892baf3010841e8f1e3b1ac2d5059a
-sha256: 6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4
-bytes: 210506
+文件md5值: 364d4eb535da19405a7e55b3566442c2
+sha256: ae4732fc3d506275730763d36c55e3eddf13b722e3a9593b7324cdcd13c26c12
+bytes: 210586
 ```
 
 Recommended form values:
