@@ -11,18 +11,24 @@ Date: 2026-06-04
 - Craft import works from a GitHub subdirectory
 - Craft run initialization succeeds
 - Craft package build succeeds
+- a local AIX candidate exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix`
+- a Lingzhu-compatible PNG icon exists at `/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png`
 
-Current known limitation:
+Current known limitations:
 
 - Craft preview renders the app correctly, but the embedded preview surface is canvas-like, so full browser automation of every in-app tap is less reliable than normal DOM testing.
+- Codex's in-app browser cannot reliably download Craft-generated files or attach local files through the system file picker. The final Lingzhu icon and AIX upload should be completed manually with the local files listed below.
 
 ## Project Files
 
 Core app files:
 
 - `/Users/geek/Documents/AIUI/apps/inspiration-hunter/AGENTS.md`
+- `/Users/geek/Documents/AIUI/apps/inspiration-hunter/VERSION`
 - `/Users/geek/Documents/AIUI/apps/inspiration-hunter/app.js`
 - `/Users/geek/Documents/AIUI/apps/inspiration-hunter/app.json`
+- `/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png`
+- `/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.svg`
 - `/Users/geek/Documents/AIUI/apps/inspiration-hunter/lib/scenarios.js`
 - `/Users/geek/Documents/AIUI/apps/inspiration-hunter/pages/index/index.ink`
 - `/Users/geek/Documents/AIUI/apps/inspiration-hunter/pages/discovery/index.ink`
@@ -39,6 +45,12 @@ env GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=accept-new -p 443' \
 ```
 
 This is the preferred fallback when port `22` is blocked.
+
+The configured remote is:
+
+```text
+ssh://git@ssh.github.com:443/gdgeek/AIUI.git
+```
 
 ## How To Open In Craft
 
@@ -85,6 +97,14 @@ Verified app flow at the source level:
 
 The current machine does not have a working local `aiui` CLI on `PATH`, so the known-good packaging route is Craft.
 
+The local handoff package candidate is:
+
+```text
+/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
+```
+
+It has been parsed by the official local `@yodaos-pkg/aix` reader. The reader reports version `0.1.0`, title `Inspiration Hunter`, and the three expected pages.
+
 ### Craft Packaging Steps
 
 1. Import the GitHub subdirectory into Craft
@@ -103,6 +123,41 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 ```
 
 8. If you have already bound a 灵珠智能体 in Craft, you can continue with `上传到灵珠`
+
+## Lingzhu AIUI Binding
+
+The Lingzhu AIUI agent creation form accepts:
+
+- icon files: `.jpeg`, `.jpg`, `.png`, `.gif`
+- agent packages: `.aix`
+
+Use these local files:
+
+```text
+/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png
+/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
+```
+
+Recommended form values:
+
+```text
+智能体名称: InspirationHunter
+智能体版本: 1.0.0
+类别: 娱乐
+功能介绍: Turn real objects into clues stories and mini challenges for creative exploration on Rokid glasses.
+开场白: Say start to hunt for inspiration.
+```
+
+Recommended permissions:
+
+```text
+网络
+摄像头
+语音识别
+麦克风
+```
+
+Detailed handoff: `/Users/geek/Documents/AIUI/docs/rokid/lingzhu-aiui-release-handoff.md`
 
 ## Optional Local CLI Checks
 
@@ -143,6 +198,7 @@ Use these files for submission and presentation:
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-demo-runbook.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-checklist.md`
+- `/Users/geek/Documents/AIUI/docs/rokid/lingzhu-aiui-release-handoff.md`
 
 ## Fast Recovery Checklist
 

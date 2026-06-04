@@ -6,7 +6,7 @@
 
 **Architecture:** Create a fresh AIUI app under `apps/inspiration-hunter/`, keep the interaction inside three focused `.ink` pages, store all scenario content locally, and iterate visually in Craft before attempting packaging or release. The app will use one golden-path curated target and a deterministic state machine rather than live recognition.
 
-**Tech Stack:** AIUI, Ink `.ink` SFC pages, Craft, npm, local scenario data, GitHub remote `git@github.com:gdgeek/AIUI.git`
+**Tech Stack:** AIUI, Ink `.ink` SFC pages, Craft, npm, local scenario data, GitHub remote `ssh://git@ssh.github.com:443/gdgeek/AIUI.git`
 
 ---
 
@@ -25,7 +25,7 @@ Run:
 git -C /Users/geek/Documents/AIUI remote -v
 ```
 
-Expected: `origin` points to `git@github.com:gdgeek/AIUI.git`.
+Expected: `origin` points to `ssh://git@ssh.github.com:443/gdgeek/AIUI.git`.
 
 - [x] **Step 2: Re-read the approved design spec**
 
@@ -378,7 +378,7 @@ Expected: one packaging route is confirmed by real command output.
 
 - [x] **Step 2: Build the distributable**
 
-Progress note: Craft `打包` has completed successfully with default options (`资源优化` on, `JSON 校验` on, `优化等级 Level 2`) and produced `gdgeek-AIUI-apps-inspiration-hunter.aix`. No working local CLI is currently available on `PATH`, so Craft remains the verified packaging route.
+Progress note: Craft `打包` has completed successfully with default options (`资源优化` on, `JSON 校验` on, `优化等级 Level 2`) and produced `gdgeek-AIUI-apps-inspiration-hunter.aix`. A local handoff candidate also exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix` and parses with the official `@yodaos-pkg/aix` reader. No working local `aiui` CLI is currently available on `PATH`, so Craft remains the verified packaging route.
 
 Run the confirmed path, preferably:
 
@@ -410,7 +410,7 @@ Expected: the repo is published to the configured GitHub remote.
 
 - [x] **Step 4: Document the deployment path**
 
-Progress note: Deployment guidance has been updated in `docs/rokid/deployment-inspiration-hunter.md` to reflect the verified GitHub subdirectory import path, SSH-over-443 push route, and Craft-first packaging flow.
+Progress note: Deployment guidance has been updated in `docs/rokid/deployment-inspiration-hunter.md` and `docs/rokid/lingzhu-aiui-release-handoff.md` to reflect the verified GitHub subdirectory import path, SSH-over-443 push route, Craft-first packaging flow, Lingzhu upload files, and the final manual file-picker step.
 
 Create:
 

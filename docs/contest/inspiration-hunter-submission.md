@@ -90,8 +90,20 @@ Craft packaging has completed successfully and produced:
 gdgeek-AIUI-apps-inspiration-hunter.aix
 ```
 
-The package result is visible in the Craft packaging panel. The `上传到灵珠` action remains disabled until a Lingzhu AI agent is bound in Craft.
+The package result is visible in the Craft packaging panel. A local AIX candidate is also available at:
+
+```text
+/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
+```
+
+The `上传到灵珠` action remains disabled until a Lingzhu AIUI agent is bound in Craft.
 
 ## Next Release Step
 
-Bind a Lingzhu AI agent in Craft, then use the package panel action `上传到灵珠` to complete the online release flow.
+Create or bind a Lingzhu AIUI agent in Craft, upload the local PNG icon and AIX package, then use the package panel action `上传到灵珠` to complete the online release flow.
+
+Required icon:
+
+```text
+/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png
+```

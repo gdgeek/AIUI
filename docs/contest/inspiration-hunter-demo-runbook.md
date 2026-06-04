@@ -19,6 +19,12 @@ https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter
 - The scan page is visible in preview.
 - The package panel has already produced `gdgeek-AIUI-apps-inspiration-hunter.aix`.
 - If online release is required, a Lingzhu AI agent is bound in Craft.
+- If creating the Lingzhu AIUI agent, keep these files ready:
+
+```text
+/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png
+/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
+```
 
 ## One-Minute Demo Script
 
@@ -102,7 +108,7 @@ If network becomes unreliable:
 If `上传到灵珠` is disabled:
 
 - Explain that Craft packaging has succeeded.
-- Bind a Lingzhu AI agent before final online release.
+- Bind or create a Lingzhu AIUI agent before final online release.
 - Continue with the downloaded AIX package or the Craft packaging result as the handoff artifact.
 
 ## Judge Q&A

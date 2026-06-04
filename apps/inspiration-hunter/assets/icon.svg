@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Inspiration Hunter icon">
+  <defs>
+    <radialGradient id="bg" cx="34%" cy="24%" r="84%">
+      <stop offset="0%" stop-color="#2fffd7"/>
+      <stop offset="36%" stop-color="#103a3f"/>
+      <stop offset="100%" stop-color="#05080d"/>
+    </radialGradient>
+    <linearGradient id="lens" x1="194" y1="256" x2="820" y2="780" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d8fff5"/>
+      <stop offset="48%" stop-color="#35f6cb"/>
+      <stop offset="100%" stop-color="#0aa0ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="330" fill="none" stroke="#10242d" stroke-width="54"/>
+  <circle cx="512" cy="512" r="286" fill="#071016" stroke="url(#lens)" stroke-width="28" filter="url(#glow)"/>
+  <path d="M314 522c52-106 115-159 190-159 77 0 145 54 206 162-56 91-121 137-197 137-78 0-144-47-199-140Z" fill="#061116" stroke="#93fff0" stroke-width="24" stroke-linejoin="round"/>
+  <circle cx="512" cy="512" r="92" fill="#0d2f37" stroke="#2fffd7" stroke-width="26"/>
+  <circle cx="512" cy="512" r="34" fill="#eafffb"/>
+  <path d="M512 216v102M512 706v102M216 512h102M706 512h102" stroke="#7ffff0" stroke-width="30" stroke-linecap="round"/>
+  <path d="M704 704l116 116" stroke="#2fffd7" stroke-width="42" stroke-linecap="round"/>
+  <path d="M266 300c54-42 118-66 191-72M781 403c18 40 27 78 29 116" stroke="#cafff6" stroke-width="18" stroke-linecap="round" opacity=".72"/>
+</svg>

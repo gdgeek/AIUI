@@ -25,6 +25,13 @@ Verified package result:
 gdgeek-AIUI-apps-inspiration-hunter.aix
 ```
 
+Local release assets:
+
+```text
+/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png
+/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
+```
+
 ## Publish Status
 
-Craft import, run, preview, and package build have been verified. The remaining online release step is binding a Lingzhu AI agent in Craft and uploading the generated AIX package.
+Craft import, run, preview, and package build have been verified. The repository remote is configured for SSH over port `443` at `ssh://git@ssh.github.com:443/gdgeek/AIUI.git`. The remaining online release step is binding or creating a Lingzhu AIUI agent in Craft/Lingzhu, then uploading the icon and AIX package.
