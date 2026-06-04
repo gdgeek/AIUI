@@ -58,6 +58,8 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 ```text
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-final-release-evidence.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-judge-scorecard.md
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-manifest.json
+/Users/geek/Documents/AIUI/scripts/verify-inspiration-hunter-release.mjs
 ```
 
 ## Final Online Publish Steps

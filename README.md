@@ -47,3 +47,5 @@ Craft import, run, preview, and package build have been verified. The repository
 
 - `docs/contest/inspiration-hunter-final-release-evidence.md`: exact manual upload and screenshot checklist
 - `docs/contest/inspiration-hunter-judge-scorecard.md`: judge-facing score map and verified claims
+- `docs/contest/inspiration-hunter-release-manifest.json`: SHA-256 hashes and upload metadata for the final release files
+- `scripts/verify-inspiration-hunter-release.mjs`: local pre-upload verifier for icon, AIX, pages, schemas, and tools

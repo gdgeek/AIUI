@@ -15,6 +15,20 @@ Use these exact files:
 
 Do not upload a different AIX unless it has been rebuilt and re-verified with the local AIX reader.
 
+Machine-readable release manifest:
+
+```text
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-manifest.json
+```
+
+Pre-upload verification command:
+
+```bash
+node /Users/geek/Documents/AIUI/scripts/verify-inspiration-hunter-release.mjs
+```
+
+The command must print `"ok": true` before final upload.
+
 ## Current Lingzhu Form State
 
 The open Lingzhu AIUI creation dialog is prepared with:
@@ -54,6 +68,7 @@ Capture these screenshots or notes:
 - Lingzhu AIUI agent list showing `InspirationHunter`.
 - Lingzhu agent detail page showing version `1.0.0`.
 - Upload record or package status showing the AIX was accepted.
+- Release manifest hash values for `icon.png` and `.aix`.
 - Craft package panel with `上传到灵珠` completed or no longer blocked by binding.
 - Device or official launch surface showing the scan page.
 - One post-upload run through scan, discovery, and challenge.
@@ -67,4 +82,3 @@ Inspiration Hunter is published to Lingzhu AIUI. Evidence captured: agent list, 
 ```
 
 If any evidence is missing, say exactly which item is missing instead of calling the project fully published.
-
