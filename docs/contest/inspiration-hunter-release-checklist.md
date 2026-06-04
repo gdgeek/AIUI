@@ -72,6 +72,7 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.pptx
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission-pack.md
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-post-review-launch-checklist.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-manifest.json
 /Users/geek/Documents/AIUI/scripts/build-inspiration-hunter-submission-pack.mjs
 /Users/geek/Documents/AIUI/scripts/verify-inspiration-hunter-release.mjs
@@ -108,6 +109,7 @@ Current verification pass:
 - 2026-06-04: pushed commit `988f3d8` to GitHub `main`, re-imported `https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter` through Craft's GitHub 子目录 form, clicked `运行智能体`, and visually verified the hands-free glasses flow from discovery to challenge completion.
 - 2026-06-04: bound the Craft GitHub directory key `github:gdgeek/AIUI#main:apps/inspiration-hunter` to Lingzhu AIUI agent `InspirationHunter`, rebuilt the AIX in Craft with default package settings, uploaded it to Lingzhu as version `1.0.1`, refreshed the Craft binding so the review target showed `版本 1.0.1`, and submitted review successfully.
 - 2026-06-04: Lingzhu `AIUI智能体` list shows `InspirationHunter` with status `审核中`.
+- 2026-06-04: Rechecked Lingzhu status and it still shows `审核中`; the post-review launch checklist is ready at `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-post-review-launch-checklist.md`.
 - Screenshots saved locally:
   - `/Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-discovery.png`
   - `/Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-final.png`

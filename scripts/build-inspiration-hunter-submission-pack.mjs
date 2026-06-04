@@ -84,17 +84,22 @@ const PACK_FILES = [
     role: "Rokid Glasses hardware parameters and AIUI design constraints",
   },
   {
-    name: "14-craft-glasses-discovery.png",
+    name: "14-post-review-launch-checklist.md",
+    source: "docs/contest/inspiration-hunter-post-review-launch-checklist.md",
+    role: "Post-review launch and device verification checklist",
+  },
+  {
+    name: "15-craft-glasses-discovery.png",
     source: "docs/contest/evidence/craft-glasses-discovery.png",
     role: "Craft runtime screenshot: discovery screen in the 448x150 glasses preview",
   },
   {
-    name: "15-craft-glasses-final.png",
+    name: "16-craft-glasses-final.png",
     source: "docs/contest/evidence/craft-glasses-final.png",
     role: "Craft runtime screenshot: challenge completion in the 448x150 glasses preview",
   },
   {
-    name: "16-lingzhu-review-status.png",
+    name: "17-lingzhu-review-status.png",
     source: "docs/contest/evidence/lingzhu-review-status.png",
     role: "Lingzhu AIUI list screenshot showing InspirationHunter in review",
   },

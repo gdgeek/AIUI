@@ -107,6 +107,13 @@ Screenshot: /Users/geek/Documents/AIUI/docs/contest/evidence/lingzhu-review-stat
 
 Important caveat: after uploading `1.0.1`, Craft still showed the stale review target `版本 1.0.0` until `设置 -> 本地目录 -> 刷新绑定` was clicked and settings were saved. Do not submit review before the review target shows the newly uploaded version.
 
+Latest status recheck:
+
+```text
+2026-06-04: Lingzhu still shows InspirationHunter as 审核中. Device or official launch verification is not available yet.
+Next checklist: /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-post-review-launch-checklist.md
+```
+
 ## Final Release Steps
 
 1. In Craft, re-import the GitHub subdirectory if the preview still shows the old tall layout.
@@ -120,7 +127,7 @@ Important caveat: after uploading `1.0.1`, Craft still showed the stale review t
 9. Fill version notes. Completed.
 10. Click `提交提审`. Completed.
 11. Capture the success message or review status. Completed with Lingzhu `审核中` screenshot.
-12. Verify the uploaded build in Lingzhu or on target Rokid hardware. Lingzhu review-state evidence exists; target device launch still pending.
+12. Verify the uploaded build in Lingzhu or on target Rokid hardware. Lingzhu review-state evidence exists; target device launch still pending until review status permits launch.
 
 If the Lingzhu agent ever needs to be recreated, use the upload recovery steps in:
 

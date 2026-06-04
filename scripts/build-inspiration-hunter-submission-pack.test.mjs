@@ -35,9 +35,10 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "11-aiui-craft-lingzhu-project-playbook.md",
     "12-aiui-craft-lingzhu-end-to-end-zh.md",
     "13-rokid-glasses-device-constraints.md",
-    "14-craft-glasses-discovery.png",
-    "15-craft-glasses-final.png",
-    "16-lingzhu-review-status.png",
+    "14-post-review-launch-checklist.md",
+    "15-craft-glasses-discovery.png",
+    "16-craft-glasses-final.png",
+    "17-lingzhu-review-status.png",
     "manifest.json",
   ];
 
@@ -99,4 +100,12 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.match(deviceConstraints, /49g/);
   assert.match(deviceConstraints, /12MP/);
   assert.match(deviceConstraints, /hands-free/);
+
+  const postReviewChecklist = await fs.readFile(
+    path.join(outputDir, "14-post-review-launch-checklist.md"),
+    "utf8",
+  );
+  assert.match(postReviewChecklist, /Post-Review Launch Checklist/);
+  assert.match(postReviewChecklist, /审核中/);
+  assert.match(postReviewChecklist, /Rokid Glasses/);
 });
