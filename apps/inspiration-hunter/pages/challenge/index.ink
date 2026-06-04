@@ -1,6 +1,30 @@
 <script def>
 {
-  "navigationBarTitleText": "Challenge"
+  "navigationBarTitleText": "Challenge",
+  "description": "A single-round challenge page that turns the discovery into a clue question and reveals the answer as the demo reward.",
+  "schema": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Challenge title shown to the user."
+        },
+        "prompt": {
+          "type": "string",
+          "description": "The clue question the user should answer."
+        },
+        "answer": {
+          "type": "string",
+          "description": "Answer revealed after the user completes the challenge."
+        },
+        "solved": {
+          "type": "boolean",
+          "description": "Whether the answer has been revealed."
+        }
+      }
+    }
+  }
 }
 </script>
 

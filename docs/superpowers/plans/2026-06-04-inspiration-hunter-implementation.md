@@ -378,7 +378,7 @@ Expected: one packaging route is confirmed by real command output.
 
 - [x] **Step 2: Build the distributable**
 
-Progress note: Craft `打包` has completed successfully with default options (`资源优化` on, `JSON 校验` on, `优化等级 Level 2`) and produced `gdgeek-AIUI-apps-inspiration-hunter.aix`. A local handoff candidate also exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix` and parses with the official `@yodaos-pkg/aix` reader. No working local `aiui` CLI is currently available on `PATH`, so Craft remains the verified packaging route.
+Progress note: Craft `打包` has completed successfully with default options (`资源优化` on, `JSON 校验` on, `优化等级 Level 2`) and produced `gdgeek-AIUI-apps-inspiration-hunter.aix`. A local handoff candidate also exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix` and parses with the official `@yodaos-pkg/aix` reader. The reader now reports schema-backed tools for all three pages without missing-schema warnings. No working local `aiui` CLI is currently available on `PATH`, so Craft remains the verified packaging route.
 
 Run the confirmed path, preferably:
 

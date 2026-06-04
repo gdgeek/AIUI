@@ -13,6 +13,7 @@ Date: 2026-06-04
 - Craft package build succeeds
 - a local AIX candidate exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix`
 - a Lingzhu-compatible PNG icon exists at `/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png`
+- all three pages expose AIUI `description` and `schema.data` metadata for cleaner tool generation
 
 Current known limitations:
 
@@ -103,7 +104,7 @@ The local handoff package candidate is:
 /Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
 ```
 
-It has been parsed by the official local `@yodaos-pkg/aix` reader. The reader reports version `0.1.0`, title `Inspiration Hunter`, and the three expected pages.
+It has been parsed by the official local `@yodaos-pkg/aix` reader. The reader reports version `0.1.0`, title `Inspiration Hunter`, the three expected pages, and schema-backed tools for the scan, discovery, and challenge screens without missing-schema warnings.
 
 ### Craft Packaging Steps
 

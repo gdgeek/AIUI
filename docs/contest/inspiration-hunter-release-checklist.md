@@ -7,6 +7,7 @@ Date: 2026-06-04
 - [x] Local AIUI source exists at `/Users/geek/Documents/AIUI/apps/inspiration-hunter`
 - [x] App identity is defined in `AGENTS.md`
 - [x] Routes are limited to the three MVP pages
+- [x] All three AIUI pages include `description` and `schema.data` metadata
 - [x] Deterministic hero scenario exists in `lib/scenarios.js`
 - [x] App version file exists at `/Users/geek/Documents/AIUI/apps/inspiration-hunter/VERSION`
 - [x] Lingzhu-compatible PNG icon exists at `/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png`
@@ -18,6 +19,7 @@ Date: 2026-06-04
 - [x] AIX package result is named `gdgeek-AIUI-apps-inspiration-hunter.aix`
 - [x] Local AIX candidate exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix`
 - [x] Local AIX candidate parses with the official `@yodaos-pkg/aix` reader
+- [x] AIX reader reports schema-backed tools for scan, discovery, and challenge pages without missing-schema warnings
 - [x] Lingzhu AIUI form has name, version, category, intro, greeting, and four recommended permissions prepared in the current browser session
 - [x] Reusable repo skills exist for AIUI app building, Craft/Lingzhu release, and contest polishing
 - [ ] Lingzhu AI agent is bound in Craft

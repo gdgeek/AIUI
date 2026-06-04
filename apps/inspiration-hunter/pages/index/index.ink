@@ -1,6 +1,30 @@
 <script def>
 {
-  "navigationBarTitleText": "Inspiration Hunter"
+  "navigationBarTitleText": "Inspiration Hunter",
+  "description": "A glasses-native scan landing page that locks onto a real-world object and starts the Inspiration Hunter discovery flow.",
+  "schema": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Current scan state shown on the target card."
+        },
+        "targetLabel": {
+          "type": "string",
+          "description": "Name of the object currently locked by the glasses."
+        },
+        "confidence": {
+          "type": "string",
+          "description": "Human-readable confidence signal for the locked target."
+        },
+        "pulse": {
+          "type": "string",
+          "description": "Short scanner status shown inside the scan ring."
+        }
+      }
+    }
+  }
 }
 </script>
 

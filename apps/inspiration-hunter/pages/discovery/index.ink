@@ -1,6 +1,46 @@
 <script def>
 {
-  "navigationBarTitleText": "Discovery"
+  "navigationBarTitleText": "Discovery",
+  "description": "A discovery result page that explains the locked object's identity, story, and why it matters, then offers deeper exploration or challenge mode.",
+  "schema": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Display title of the discovered object."
+        },
+        "category": {
+          "type": "string",
+          "description": "Object category or content type."
+        },
+        "insight": {
+          "type": "string",
+          "description": "Short first insight for the object."
+        },
+        "whyItMatters": {
+          "type": "string",
+          "description": "Explanation of why the object is worth noticing."
+        },
+        "story": {
+          "type": "string",
+          "description": "Narrative context shown in the story card."
+        },
+        "deepDive": {
+          "type": "string",
+          "description": "Expanded interpretation revealed by the deep-dive action."
+        },
+        "saved": {
+          "type": "boolean",
+          "description": "Whether the discovery has been saved locally in the current session."
+        },
+        "expanded": {
+          "type": "boolean",
+          "description": "Whether the deep-dive section is visible."
+        }
+      }
+    }
+  }
 }
 </script>
 
