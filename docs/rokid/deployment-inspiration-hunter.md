@@ -198,6 +198,7 @@ Use these files for submission and presentation:
 
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-demo-runbook.md`
+- `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-demo-storyboard.svg`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-cn-one-pager.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.pptx`

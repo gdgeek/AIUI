@@ -31,6 +31,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "07-judge-scorecard.md",
     "08-final-release-evidence.md",
     "09-lingzhu-aiui-release-handoff.md",
+    "10-demo-storyboard.svg",
     "manifest.json",
   ];
 
@@ -60,4 +61,11 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.match(chineseBrief, /灵感猎手/);
   assert.match(chineseBrief, /90 秒路演话术/);
   assert.match(chineseBrief, /不是把聊天机器人搬到眼镜上/);
+
+  const storyboard = await fs.readFile(path.join(outputDir, "10-demo-storyboard.svg"), "utf8");
+  assert.match(storyboard, /<svg/);
+  assert.match(storyboard, /SCAN/);
+  assert.match(storyboard, /REVEAL/);
+  assert.match(storyboard, /CHALLENGE/);
+  assert.match(storyboard, /银翼猎影海报/);
 });

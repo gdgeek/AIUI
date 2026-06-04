@@ -41,7 +41,8 @@ Use this order when submitting or uploading:
 9. `07-judge-scorecard.md`
 10. `08-final-release-evidence.md`
 11. `09-lingzhu-aiui-release-handoff.md`
-12. `manifest.json`
+12. `10-demo-storyboard.svg`
+13. `manifest.json`
 
 ## Lingzhu Upload Fields
 
@@ -64,6 +65,8 @@ Use `03a-cn-judge-one-pager.md` when the reviewer or event context is Chinese-fi
 - a 90-second spoken pitch
 - likely judge Q&A
 - the closing line for live presentation
+
+Use `10-demo-storyboard.svg` as a visual companion when reviewers need to understand the app before opening Craft. It is a storyboard derived from the implemented demo flow, not a device screenshot.
 
 ## Why This Pack Exists
 

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="Inspiration Hunter three-screen demo storyboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#041114"/>
+      <stop offset="55%" stop-color="#082229"/>
+      <stop offset="100%" stop-color="#051016"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#61ffd7"/>
+      <stop offset="100%" stop-color="#5cc8ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#31f6e0"/>
+    </marker>
+    <style>
+      .bg { fill: url(#bg); }
+      .grid { stroke: #17383f; stroke-width: 1; opacity: 0.52; }
+      .title { fill: #eefcfb; font-family: "Aptos Display", "PingFang SC", sans-serif; font-size: 38px; font-weight: 800; }
+      .subtitle { fill: #91bdbe; font-family: "Aptos", "PingFang SC", sans-serif; font-size: 16px; }
+      .mono { fill: #31f6e0; font-family: "Aptos Mono", monospace; font-size: 14px; font-weight: 700; letter-spacing: 1px; }
+      .small { fill: #a9d4d4; font-family: "Aptos", "PingFang SC", sans-serif; font-size: 13px; }
+      .card { fill: #0b2a31; stroke: #2c6b73; stroke-width: 1.6; }
+      .screen { fill: #071a20; stroke: #31f6e0; stroke-width: 2.5; rx: 24; }
+      .screen-title { fill: #f3fffd; font-family: "Aptos Display", "PingFang SC", sans-serif; font-size: 23px; font-weight: 800; }
+      .screen-text { fill: #a9d4d4; font-family: "Aptos", "PingFang SC", sans-serif; font-size: 13px; }
+      .screen-label { fill: #61ffd7; font-family: "Aptos Mono", monospace; font-size: 12px; font-weight: 700; letter-spacing: 1px; }
+      .badge-text { fill: #031219; font-family: "Aptos Mono", monospace; font-size: 13px; font-weight: 800; }
+      .line { stroke: #31f6e0; stroke-width: 3; fill: none; marker-end: url(#arrow); opacity: 0.85; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="1200"/>
+  <g opacity="0.55">
+    <path class="grid" d="M60 0V1200 M120 0V1200 M180 0V1200 M240 0V1200 M300 0V1200 M360 0V1200 M420 0V1200 M480 0V1200 M540 0V1200 M600 0V1200 M660 0V1200 M720 0V1200 M780 0V1200 M840 0V1200 M900 0V1200 M960 0V1200 M1020 0V1200 M1080 0V1200 M1140 0V1200"/>
+    <path class="grid" d="M0 60H1200 M0 120H1200 M0 180H1200 M0 240H1200 M0 300H1200 M0 360H1200 M0 420H1200 M0 480H1200 M0 540H1200 M0 600H1200 M0 660H1200 M0 720H1200 M0 780H1200 M0 840H1200 M0 900H1200 M0 960H1200 M0 1020H1200 M0 1080H1200 M0 1140H1200"/>
+  </g>
+
+  <text class="mono" x="54" y="48">INSPIRATION HUNTER / DEMO STORYBOARD</text>
+  <text class="title" x="54" y="94">From seeing to discovery in 60 seconds</text>
+  <text class="subtitle" x="56" y="126">Pitch visual derived from implemented AIUI pages. It is a storyboard, not a device screenshot.</text>
+
+  <g transform="translate(60 168)">
+    <rect class="screen" x="0" y="0" width="300" height="365"/>
+    <text class="screen-label" x="24" y="42">01 / SCAN</text>
+    <text class="screen-title" x="24" y="78">灵感猎手</text>
+    <text class="screen-text" x="24" y="105">看见现实，立即展开 AI 探索。</text>
+    <circle cx="150" cy="180" r="58" fill="none" stroke="#61ffd7" stroke-width="4" filter="url(#glow)"/>
+    <circle cx="150" cy="180" r="31" fill="none" stroke="#5cc8ff" stroke-width="2.5"/>
+    <text class="screen-label" x="124" y="185">LOCKED</text>
+    <rect class="card" x="24" y="266" width="252" height="72" rx="16"/>
+    <text class="screen-label" x="42" y="292">当前锁定目标</text>
+    <text class="screen-title" x="42" y="321" font-size="19">复古电影海报</text>
+    <text class="screen-text" x="42" y="343">识别可信度 92%</text>
+  </g>
+
+  <path class="line" d="M380 350 H418"/>
+
+  <g transform="translate(440 168)">
+    <rect class="screen" x="0" y="0" width="320" height="365"/>
+    <text class="screen-label" x="24" y="42">02 / REVEAL</text>
+    <text class="screen-title" x="24" y="78">银翼猎影海报</text>
+    <text class="screen-text" x="24" y="105">电影海报 / 复古科幻</text>
+    <rect class="card" x="24" y="134" width="272" height="65" rx="15"/>
+    <text class="screen-label" x="42" y="160">为什么值得看</text>
+    <text class="screen-text" x="42" y="184">赛博城市与孤独英雄，被压缩成视觉符号。</text>
+    <rect class="card" x="24" y="222" width="272" height="65" rx="15"/>
+    <text class="screen-label" x="42" y="248">故事背景</text>
+    <text class="screen-text" x="42" y="272">先让观众感到危险，再感到浪漫。</text>
+    <rect x="24" y="313" width="78" height="35" rx="12" fill="none" stroke="#61ffd7" stroke-width="2"/>
+    <text class="screen-label" x="50" y="336">深挖</text>
+    <rect x="112" y="313" width="78" height="35" rx="12" fill="none" stroke="#61ffd7" stroke-width="2"/>
+    <text class="screen-label" x="138" y="336">收藏</text>
+    <rect x="200" y="313" width="96" height="35" rx="12" fill="url(#accent)"/>
+    <text class="badge-text" x="231" y="336">挑战</text>
+  </g>
+
+  <path class="line" d="M780 350 H818"/>
+
+  <g transform="translate(840 168)">
+    <rect class="screen" x="0" y="0" width="300" height="365"/>
+    <text class="screen-label" x="24" y="42">03 / CHALLENGE</text>
+    <text class="screen-title" x="24" y="78">找出隐藏线索</text>
+    <rect class="card" x="24" y="116" width="252" height="92" rx="16"/>
+    <text class="screen-label" x="42" y="143">HUNTER CHALLENGE</text>
+    <text class="screen-text" x="42" y="169">海报里最能代表未来都市焦虑的视觉元素是什么？</text>
+    <rect class="card" x="24" y="238" width="252" height="78" rx="16"/>
+    <text class="screen-label" x="42" y="264">线索解锁成功</text>
+    <text class="screen-title" x="42" y="295" font-size="19">霓虹雨夜城市天际线</text>
+    <rect x="86" y="330" width="128" height="30" rx="12" fill="url(#accent)"/>
+    <text class="badge-text" x="121" y="351">完成探索</text>
+  </g>
+
+  <g transform="translate(54 592)">
+    <rect x="0" y="0" width="1092" height="47" rx="16" fill="#0b2a31" stroke="#2c6b73"/>
+    <text class="mono" x="24" y="30">JUDGE TAKEAWAY</text>
+    <text class="small" x="205" y="30">Not a chatbot on glasses: a contextual discovery loop that starts from the real-world object in front of the user.</text>
+  </g>
+
+  <g transform="translate(54 720)">
+    <text class="mono" x="0" y="0">SUBMISSION PACK READY</text>
+    <text class="title" x="0" y="56" font-size="34">Release files, pitch, and evidence in one folder</text>
+    <text class="subtitle" x="2" y="92">Use the generated pack for Lingzhu upload and contest review.</text>
+
+    <g transform="translate(0 140)">
+      <rect class="card" x="0" y="0" width="330" height="190" rx="22"/>
+      <text class="screen-label" x="26" y="40">UPLOAD FIRST</text>
+      <text class="screen-title" x="26" y="82">Icon + AIX</text>
+      <text class="screen-text" x="26" y="120">01-InspirationHunter-icon.png</text>
+      <text class="screen-text" x="26" y="148">02-InspirationHunter-v0.1.0.aix</text>
+    </g>
+
+    <g transform="translate(382 140)">
+      <rect class="card" x="0" y="0" width="330" height="190" rx="22"/>
+      <text class="screen-label" x="26" y="40">PITCH MATERIALS</text>
+      <text class="screen-title" x="26" y="82">Deck + 中文一页纸</text>
+      <text class="screen-text" x="26" y="120">03-InspirationHunter-pitch-deck.pptx</text>
+      <text class="screen-text" x="26" y="148">03a-cn-judge-one-pager.md</text>
+    </g>
+
+    <g transform="translate(764 140)">
+      <rect class="card" x="0" y="0" width="330" height="190" rx="22"/>
+      <text class="screen-label" x="26" y="40">EVIDENCE</text>
+      <text class="screen-title" x="26" y="82">Verifier + checklist</text>
+      <text class="screen-text" x="26" y="120">AIX reader: ok</text>
+      <text class="screen-text" x="26" y="148">schema-backed pages: 3</text>
+    </g>
+  </g>
+</svg>

@@ -63,6 +63,11 @@ const PACK_FILES = [
     source: "docs/rokid/lingzhu-aiui-release-handoff.md",
     role: "Lingzhu form values and upload steps",
   },
+  {
+    name: "10-demo-storyboard.svg",
+    source: "docs/contest/inspiration-hunter-demo-storyboard.svg",
+    role: "Visual storyboard of the three-screen demo arc",
+  },
 ];
 
 async function sha256File(filePath) {
