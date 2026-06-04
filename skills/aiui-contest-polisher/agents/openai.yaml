@@ -1,0 +1,4 @@
+interface:
+  display_name: "AIUI Contest Polisher"
+  short_description: "Turn AIUI demos into judge-ready submissions."
+  default_prompt: "Use this skill to refine an AIUI project for competition: concept, demo runbook, judging hooks, fallback story, and release evidence."

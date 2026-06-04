@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rokid AIUI App Builder"
+  short_description: "Build contest-ready Rokid AIUI apps."
+  default_prompt: "Use this skill to build or improve a Rokid AIUI app from local docs, Craft constraints, and verified packaging requirements."

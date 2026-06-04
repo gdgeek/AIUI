@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rokid Craft Lingzhu Release"
+  short_description: "Package and publish AIUI apps through Craft and Lingzhu."
+  default_prompt: "Use this skill to package a Rokid AIUI app in Craft, create or bind a Lingzhu AIUI agent, and finish the release checklist."

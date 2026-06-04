@@ -8,6 +8,7 @@ Contest-ready Rokid AIUI demos and working notes.
 - `docs/rokid`: AIUI and Craft notes
 - `docs/contest`: submission brief, demo runbook, and release checklist
 - `docs/superpowers`: design specs and implementation plans
+- `skills`: reusable Rokid AIUI development, release, and contest-polish workflows
 
 ## Current Demo
 
@@ -35,3 +36,9 @@ Local release assets:
 ## Publish Status
 
 Craft import, run, preview, and package build have been verified. The repository remote is configured for SSH over port `443` at `ssh://git@ssh.github.com:443/gdgeek/AIUI.git`. The remaining online release step is binding or creating a Lingzhu AIUI agent in Craft/Lingzhu, then uploading the icon and AIX package.
+
+## Reusable Skills
+
+- `skills/rokid-aiui-app-builder`: build and improve Craft-importable AIUI apps
+- `skills/rokid-craft-lingzhu-release`: package, bind, and release through Craft/Lingzhu
+- `skills/aiui-contest-polisher`: sharpen the judge-facing story, demo, and evidence

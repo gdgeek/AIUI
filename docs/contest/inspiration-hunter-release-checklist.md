@@ -19,6 +19,7 @@ Date: 2026-06-04
 - [x] Local AIX candidate exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix`
 - [x] Local AIX candidate parses with the official `@yodaos-pkg/aix` reader
 - [x] Lingzhu AIUI form has name, version, category, intro, greeting, and four recommended permissions prepared in the current browser session
+- [x] Reusable repo skills exist for AIUI app building, Craft/Lingzhu release, and contest polishing
 - [ ] Lingzhu AI agent is bound in Craft
 - [ ] AIX package is uploaded to Lingzhu
 - [ ] Device-side launch is verified on target Rokid hardware
@@ -40,6 +41,14 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 ```text
 /Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png
 /Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
+```
+
+## Reusable Skills
+
+```text
+/Users/geek/Documents/AIUI/skills/rokid-aiui-app-builder
+/Users/geek/Documents/AIUI/skills/rokid-craft-lingzhu-release
+/Users/geek/Documents/AIUI/skills/aiui-contest-polisher
 ```
 
 ## Final Online Publish Steps
