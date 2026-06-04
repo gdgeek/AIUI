@@ -198,6 +198,8 @@ Use these files for submission and presentation:
 
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-demo-runbook.md`
+- `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.md`
+- `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.pptx`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-checklist.md`
 - `/Users/geek/Documents/AIUI/docs/rokid/lingzhu-aiui-release-handoff.md`
 
