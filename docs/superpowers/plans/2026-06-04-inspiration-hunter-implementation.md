@@ -425,6 +425,56 @@ It must explain:
 
 Expected: future deployment is repeatable without rediscovery.
 
+### Task 10: Prepare contest submission materials
+
+**Files:**
+- Create: `docs/contest/inspiration-hunter-submission.md`
+- Create: `docs/contest/inspiration-hunter-demo-runbook.md`
+- Create: `docs/contest/inspiration-hunter-release-checklist.md`
+- Modify: `README.md`
+- Create: `.gitignore`
+
+- [x] **Step 1: Write the judge-facing submission brief**
+
+Create a concise contest submission document that covers:
+
+- project name
+- one-line concept
+- AI glasses fit
+- judge-facing highlights
+- MVP feature set
+- package and source status
+
+Expected: the app can be explained quickly to a contest reviewer without requiring extra context from chat history.
+
+- [x] **Step 2: Write the live demo runbook**
+
+Create a demo runbook that covers:
+
+- pre-demo checklist
+- one-minute script
+- three-minute pitch structure
+- fallback plan
+- judge Q&A
+
+Expected: the app can be presented reliably even if preview navigation, timing, or network conditions are imperfect.
+
+- [x] **Step 3: Write the release checklist**
+
+Create a release checklist that distinguishes:
+
+- completed local/Craft readiness items
+- remaining Lingzhu binding and upload items
+- final acceptance gate for calling the project fully published
+
+Expected: the remaining release gap is explicit and cannot be confused with an already completed upload.
+
+- [x] **Step 4: Update the repository landing page and ignore local caches**
+
+Update `README.md` and `.gitignore` so the repository points to the current demo, Craft import URL, package status, and tracked-vs-local artifact boundary.
+
+Expected: GitHub stays focused on the contest source and documents while local downloaded vendor/tool folders remain available on this machine.
+
 ## Self-Review
 
 - Spec coverage:
@@ -433,6 +483,7 @@ Expected: future deployment is repeatable without rediscovery.
   - compact MVP scope: enforced by Tasks 5-7
   - Craft-first workflow: covered by Task 8
   - packaging and publication: covered by Task 9
+  - contest submission readiness: covered by Task 10
 - Placeholder scan:
   - no `TODO` / `TBD` markers remain
   - deployment documentation is an explicit deliverable, not an implied future task

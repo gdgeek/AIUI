@@ -136,6 +136,14 @@ Recommended live script:
 4. “I go deeper.”
 5. “I enter a challenge and unlock the answer.”
 
+## Contest Materials
+
+Use these files for submission and presentation:
+
+- `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission.md`
+- `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-demo-runbook.md`
+- `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-checklist.md`
+
 ## Fast Recovery Checklist
 
 If the session breaks and you need to recover fast:
