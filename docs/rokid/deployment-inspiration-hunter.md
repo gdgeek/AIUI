@@ -18,7 +18,7 @@ Date: 2026-06-04
 Current known limitations:
 
 - Craft preview renders the app correctly, but the embedded preview surface is canvas-like, so full browser automation of every in-app tap is less reliable than normal DOM testing.
-- Codex's in-app browser cannot reliably download Craft-generated files or attach local files through the system file picker. The final Lingzhu icon and AIX upload should be completed manually with the local files listed below.
+- Codex's in-app browser cannot reliably download Craft-generated files or attach local files through the system file picker. The current Lingzhu form already has the text fields, category, permissions, and icon ready; the remaining external blocker is selecting the local AIX package once.
 
 ## Project Files
 
@@ -138,6 +138,14 @@ Use these local files:
 /Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png
 /Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
 ```
+
+Current Lingzhu upload status:
+
+- icon: visible in the creation form
+- permissions: `网络`, `摄像头`, `语音识别`, and `麦克风` checked
+- package: waiting for `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix`
+
+After selecting the package, verify Lingzhu fills the disabled parse fields for md5, title, version, pages, and tools before clicking `确认`.
 
 Recommended form values:
 
