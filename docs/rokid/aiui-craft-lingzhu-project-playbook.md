@@ -4,6 +4,12 @@ Date: 2026-06-04
 
 Use this playbook for future AIUI projects that need to move from idea to a Craft build, Lingzhu AIUI agent, review submission, and contest/demo materials without repeating the detours from `Inspiration Hunter`.
 
+Chinese SOP for future projects:
+
+```text
+docs/rokid/aiui-craft-lingzhu-end-to-end-zh.md
+```
+
 ## Golden Path
 
 1. Define the app concept and judging hook.
@@ -70,6 +76,27 @@ For contest projects, design around a 60 to 90 second judge path:
 ```text
 start -> first delight -> deeper value -> mini challenge or payoff -> clear ending
 ```
+
+## Glasses Preview Fit
+
+Treat the Craft runtime preview as a glasses-first surface, not a phone webpage. The `Inspiration Hunter` flow initially initialized successfully but was still unusable because the 448x150 preview only showed the top hero card and hid the primary action.
+
+Design rules for future projects:
+
+- keep the primary route visible inside 448x150.
+- use a fixed visible stage such as `.screen { height: 150px; overflow: hidden; }`.
+- avoid `min-height: 100vh` for the main interaction shell.
+- keep the title, status, and primary CTA visible on first render.
+- prefer compact horizontal panels over tall stacked cards.
+- verify each critical button is present in the first viewport before packaging.
+
+For `Inspiration Hunter`, this guard is encoded in:
+
+```bash
+node --test scripts/inspiration-hunter-viewport-fit.test.mjs
+```
+
+Future projects should clone that pattern with project-specific page paths and labels.
 
 ## Local Verification
 
@@ -142,6 +169,19 @@ Acceptance evidence:
 - the first screen renders in the preview.
 
 Known limitation: Craft preview can behave like a canvas or embedded runtime. DOM automation may not see every in-app tap. Pair source-level tests with visual/manual preview checks instead of relying on DOM-only testing.
+
+If Craft still shows stale source after a GitHub push:
+
+1. Click `重新加载当前工程`.
+2. Re-import the same GitHub subdirectory URL.
+3. If the main branch still appears stale, import a commit-specific URL:
+
+```text
+https://github.com/<owner>/<repo>/tree/<commit-sha>/apps/<project-name>
+```
+
+4. Open the changed `.ink` file in Craft and confirm the source contains the latest layout.
+5. Run again and capture a screenshot before continuing to package or review.
 
 ## Packaging
 
@@ -316,6 +356,8 @@ For a contest entry, maintain a repeatable release bundle:
 08-final-release-evidence.md
 09-lingzhu-aiui-release-handoff.md
 10-demo-storyboard.svg
+11-aiui-craft-lingzhu-project-playbook.md
+12-aiui-craft-lingzhu-end-to-end-zh.md
 manifest.json
 ```
 

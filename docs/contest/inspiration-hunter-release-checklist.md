@@ -22,8 +22,15 @@ Date: 2026-06-04
 - [x] AIX reader reports schema-backed tools for scan, discovery, and challenge pages without missing-schema warnings
 - [x] Lingzhu AIUI form has name, version, category, intro, greeting, and four recommended permissions prepared in the current browser session
 - [x] Reusable repo skills exist for AIUI app building, Craft/Lingzhu release, and contest polishing
-- [ ] Lingzhu AI agent is bound in Craft
-- [ ] AIX package is uploaded to Lingzhu
+- [x] Lingzhu AIUI agent `InspirationHunter` was created successfully
+- [x] Lingzhu accepted and parsed the uploaded AIX package
+- [x] Craft is opened with `defaultAgentId=7c5ebbe8edc04f1fa09b6bf9c59a3f26`
+- [x] Craft `提审` reaches the bound-agent confirmation flow
+- [x] The local app has a 448x150 viewport regression test
+- [x] The latest local AIX candidate was rebuilt after the 448x150 viewport fix
+- [ ] Craft has re-imported the latest 448x150 source from GitHub
+- [ ] Craft runtime golden path is verified after the latest re-import
+- [ ] Craft `提交提审` succeeds
 - [ ] Device-side launch is verified on target Rokid hardware
 
 ## Required Craft Import URL
@@ -85,10 +92,23 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 
 Do not call the project fully published until these are true:
 
-- the AIX package is uploaded to the bound Lingzhu AI agent
+- the latest AIX package is uploaded to the bound Lingzhu AI agent
+- Craft is running the latest 448x150 source, not a stale pre-fix import
 - the target device or official release surface can launch the build
 - the scan, discovery, and challenge flow has been exercised at least once after upload
 
-## Current Blocker
+## Current Release Gate
 
-The remaining publish action requires selecting `icon.png` and `.aix` in the Lingzhu system file picker, submitting the AIUI agent, then binding that agent in Craft. Craft packaging itself is already verified. Codex's in-app browser can fill ordinary form fields and check permissions, but the system file picker still needs a manual click-and-select step.
+The Lingzhu file upload and agent creation steps are complete. The remaining release gate is to make Craft load the latest pushed 448x150 source, run the golden path visually, then submit review from the bound `defaultAgentId` session.
+
+If Craft still shows the old tall layout, re-import:
+
+```text
+https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter
+```
+
+If `main` is cached, use the known good commit:
+
+```text
+https://github.com/gdgeek/AIUI/tree/e1b20367525db061a7e658e8b69fc6ca69ddbab9/apps/inspiration-hunter
+```

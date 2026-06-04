@@ -33,6 +33,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "09-lingzhu-aiui-release-handoff.md",
     "10-demo-storyboard.svg",
     "11-aiui-craft-lingzhu-project-playbook.md",
+    "12-aiui-craft-lingzhu-end-to-end-zh.md",
     "manifest.json",
   ];
 
@@ -77,4 +78,12 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.match(playbook, /Golden Path/);
   assert.match(playbook, /File Picker Reality/);
   assert.match(playbook, /Review Submission/);
+
+  const chineseSop = await fs.readFile(
+    path.join(outputDir, "12-aiui-craft-lingzhu-end-to-end-zh.md"),
+    "utf8",
+  );
+  assert.match(chineseSop, /AIUI Craft Lingzhu End-to-End SOP/);
+  assert.match(chineseSop, /448x150/);
+  assert.match(chineseSop, /defaultAgentId/);
 });

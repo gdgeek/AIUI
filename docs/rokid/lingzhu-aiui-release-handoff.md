@@ -37,6 +37,7 @@ Current agent status:
 智能体版本: 1.0.0
 Lingzhu agent ID: 7c5ebbe8edc04f1fa09b6bf9c59a3f26
 Craft review flow: Step 2/2, ready for version notes and 提交提审 after final runtime testing
+Important: local AIX was rebuilt after the 448x150 viewport fix. Re-upload if Lingzhu still points to the earlier package md5.
 ```
 
 The form accepts:
@@ -66,6 +67,14 @@ The AIX candidate includes:
 - `lib/scenarios.js`
 - all three `.ink` pages
 - `package.json`
+
+Current local AIX identity:
+
+```text
+md5: 7f892baf3010841e8f1e3b1ac2d5059a
+sha256: 6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4
+bytes: 210506
+```
 
 ## Recommended Lingzhu Form Values
 
@@ -98,7 +107,7 @@ Current browser session status:
 - the current open review panel is on `步骤 2/2`
 - final runtime testing should happen before clicking `提交提审`
 
-The uploaded `.aix` package produced these Lingzhu parse values:
+The earlier uploaded `.aix` package produced these Lingzhu parse values:
 
 ```text
 文件md5值: d032ae84aff3df9be8732cef53f0768d
@@ -107,6 +116,8 @@ jsui包版本: 0.1.0
 jsui包页面: pages/index/index, pages/discovery/index, pages/challenge/index
 jsui包工具: generated for all three AIUI pages
 ```
+
+If Lingzhu still shows `d032ae84aff3df9be8732cef53f0768d`, the platform is still referencing the pre-viewport-fix package. Re-upload `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix` and confirm the md5 updates before final review submission.
 
 ## Codex Browser Upload Limitation
 

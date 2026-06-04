@@ -73,6 +73,11 @@ const PACK_FILES = [
     source: "docs/rokid/aiui-craft-lingzhu-project-playbook.md",
     role: "Reusable AIUI Craft/Lingzhu development and release playbook",
   },
+  {
+    name: "12-aiui-craft-lingzhu-end-to-end-zh.md",
+    source: "docs/rokid/aiui-craft-lingzhu-end-to-end-zh.md",
+    role: "Chinese end-to-end AIUI Craft/Lingzhu SOP for future projects",
+  },
 ];
 
 async function sha256File(filePath) {

@@ -17,10 +17,13 @@ Date: 2026-06-04
 - the Lingzhu AIUI agent has been created successfully
 - Craft reopened with the bound Lingzhu agent ID in `defaultAgentId`
 - Craft `提审` reaches the bound-agent confirmation flow
+- the local app and AIX candidate have been updated for the 448x150 Craft preview viewport
+- the latest local AIX candidate has md5 `7f892baf3010841e8f1e3b1ac2d5059a` and sha256 `6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4`
 
 Current known limitations:
 
 - Craft preview renders the app correctly, but the embedded preview surface is canvas-like, so full browser automation of every in-app tap is less reliable than normal DOM testing.
+- Craft can retain stale imported source after GitHub pushes. If the preview still shows the old tall layout, re-import the GitHub subdirectory or use the commit-specific URL documented in the playbook.
 - Codex's in-app browser cannot reliably download Craft-generated files or attach local files through the system file picker. The reliable workaround is a one-time manual file picker selection followed by automated state verification.
 
 Reusable full-process playbook: `/Users/geek/Documents/AIUI/docs/rokid/aiui-craft-lingzhu-project-playbook.md`
@@ -147,7 +150,7 @@ Use these local files:
 Current Lingzhu upload status:
 
 - icon: uploaded and visible in the creation form
-- package: uploaded and parsed by Lingzhu
+- package: uploaded and parsed by Lingzhu once; re-upload the current local AIX if Lingzhu still shows the earlier md5
 - permissions: `网络`, `摄像头`, `语音识别`, and `麦克风` checked
 - agent creation: successful
 - Lingzhu agent ID: `7c5ebbe8edc04f1fa09b6bf9c59a3f26`
@@ -161,6 +164,14 @@ jsui包标题: Inspiration Hunter
 jsui包版本: 0.1.0
 jsui包页面: pages/index/index, pages/discovery/index, pages/challenge/index
 jsui包工具: generated for all three AIUI pages
+```
+
+Current local package after the 448x150 fix:
+
+```text
+文件md5值: 7f892baf3010841e8f1e3b1ac2d5059a
+sha256: 6f50cbaf2195b487c9c85f8f2d20ed00a1ab581dd80ae715ded33c7024a1ebf4
+bytes: 210506
 ```
 
 Recommended form values:
