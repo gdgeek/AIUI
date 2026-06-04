@@ -53,6 +53,13 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 /Users/geek/Documents/AIUI/skills/aiui-contest-polisher
 ```
 
+## Final Evidence Guides
+
+```text
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-final-release-evidence.md
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-judge-scorecard.md
+```
+
 ## Final Online Publish Steps
 
 1. Open [https://js.rokid.com/craft](https://js.rokid.com/craft).

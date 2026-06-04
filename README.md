@@ -42,3 +42,8 @@ Craft import, run, preview, and package build have been verified. The repository
 - `skills/rokid-aiui-app-builder`: build and improve Craft-importable AIUI apps
 - `skills/rokid-craft-lingzhu-release`: package, bind, and release through Craft/Lingzhu
 - `skills/aiui-contest-polisher`: sharpen the judge-facing story, demo, and evidence
+
+## Final Evidence
+
+- `docs/contest/inspiration-hunter-final-release-evidence.md`: exact manual upload and screenshot checklist
+- `docs/contest/inspiration-hunter-judge-scorecard.md`: judge-facing score map and verified claims
