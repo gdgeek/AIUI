@@ -72,12 +72,12 @@ jsui包工具: generated for all three AIUI pages
 
 The latest local source and AIX were updated after a 448x150 Craft preview fix. Final evidence must prove Craft is running that latest layout, not the earlier tall layout.
 
-Current local AIX after the absolute-position layout fix:
+Current local AIX after the AI glasses key and hands-free interaction fix:
 
 ```text
-文件md5值: 364d4eb535da19405a7e55b3566442c2
-sha256: ae4732fc3d506275730763d36c55e3eddf13b722e3a9593b7324cdcd13c26c12
-bytes: 210586
+文件md5值: 737ef9993dfd34aeff13642a218a7387
+sha256: e50f392e1fe659fcad8f26af29de9913bc90cbc8efe44613ef093455959c839f
+bytes: 211055
 ```
 
 ## Final Release Steps

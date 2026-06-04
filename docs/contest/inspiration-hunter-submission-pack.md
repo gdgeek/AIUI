@@ -44,7 +44,8 @@ Use this order when submitting or uploading:
 12. `10-demo-storyboard.svg`
 13. `11-aiui-craft-lingzhu-project-playbook.md`
 14. `12-aiui-craft-lingzhu-end-to-end-zh.md`
-15. `manifest.json`
+15. `13-rokid-glasses-device-constraints.md`
+16. `manifest.json`
 
 ## Lingzhu Upload Fields
 
@@ -73,6 +74,8 @@ Use `10-demo-storyboard.svg` as a visual companion when reviewers need to unders
 Use `11-aiui-craft-lingzhu-project-playbook.md` as the reusable process record for future AIUI projects. It captures the exact Craft, Lingzhu, native file picker, binding, review, and testing gates that prevented detours in this project.
 
 Use `12-aiui-craft-lingzhu-end-to-end-zh.md` as the Chinese SOP for future projects. It is the fastest teammate-facing path from idea, local development, Craft import, Lingzhu upload, binding, review, and final launch verification.
+
+Use `13-rokid-glasses-device-constraints.md` before designing the next AIUI app. It turns Rokid Glasses hardware parameters into UI, interaction, and demo constraints.
 
 ## Why This Pack Exists
 

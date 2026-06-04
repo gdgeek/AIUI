@@ -41,7 +41,32 @@ export default {
     answer: scenario.challengeAnswer,
     solved: false,
   },
+  onShow() {
+    this.revealTimer = setTimeout(() => {
+      this.solveChallenge();
+    }, 2400);
+  },
+  onHide() {
+    if (this.revealTimer) {
+      clearTimeout(this.revealTimer);
+      this.revealTimer = null;
+    }
+  },
+  onKeyDown(event) {
+    if (event?.code === 'Enter') {
+      this.solveChallenge();
+    }
+
+    if (event?.code === 'Backspace') {
+      this.backToDiscovery();
+    }
+  },
   solveChallenge() {
+    if (this.revealTimer) {
+      clearTimeout(this.revealTimer);
+      this.revealTimer = null;
+    }
+
     this.setData({
       solved: true,
     });

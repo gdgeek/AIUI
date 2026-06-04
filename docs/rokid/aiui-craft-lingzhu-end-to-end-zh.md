@@ -9,21 +9,23 @@ Date: 2026-06-04
 ## 0. 最短总路径
 
 1. 先定一个 60 到 90 秒能讲清楚的作品概念。
-2. 在本地创建 `apps/<project-name>`，不要直接在网页里散落修改。
-3. 写 `AGENTS.md`、`app.json`、`.ink` 页面、图标、场景数据。
-4. 为眼镜预览优先做 448x150 关键路径适配。
-5. 本地跑校验脚本，确认图标、页面、schema、AIX 都可解析。
-6. 推送 GitHub。
-7. 在 Craft 用 GitHub 子目录导入。
-8. 在 Craft 运行，看到 `初始化成功` 后走一遍黄金路径。
-9. 在 Craft 打包生成 `.aix`。
-10. 把 `.aix` 放进 `artifacts/`，更新 manifest，再重新跑校验。
-11. 在 Lingzhu 创建 `AIUI智能体`，上传 icon 和 `.aix`。
-12. 等 Lingzhu 自动解析出 md5、标题、版本、页面、工具后再点确认。
-13. 用 `defaultAgentId=<agent-id>` 回到 Craft 绑定智能体。
-14. 再跑一次 Craft 运行测试。
-15. 打开 `提审`，确认绑定目标，填写版本说明，提交。
-16. 从官方发布入口或 Rokid 硬件启动验证。
+2. 先读 Rokid Glasses 设备约束：`docs/rokid/rokid-glasses-device-constraints.md`。
+3. 在本地创建 `apps/<project-name>`，不要直接在网页里散落修改。
+4. 写 `AGENTS.md`、`app.json`、`.ink` 页面、图标、场景数据。
+5. 为眼镜预览优先做 448x150 关键路径适配。
+6. 加入眼镜按键、返回键和 hands-free 自动推进。
+7. 本地跑校验脚本，确认图标、页面、schema、AIX 都可解析。
+8. 推送 GitHub。
+9. 在 Craft 用 GitHub 子目录导入。
+10. 在 Craft 运行，看到 `初始化成功` 后走一遍黄金路径。
+11. 在 Craft 打包生成 `.aix`。
+12. 把 `.aix` 放进 `artifacts/`，更新 manifest，再重新跑校验。
+13. 在 Lingzhu 创建 `AIUI智能体`，上传 icon 和 `.aix`。
+14. 等 Lingzhu 自动解析出 md5、标题、版本、页面、工具后再点确认。
+15. 用 `defaultAgentId=<agent-id>` 回到 Craft 绑定智能体。
+16. 再跑一次 Craft 运行测试。
+17. 打开 `提审`，确认绑定目标，填写版本说明，提交。
+18. 从官方发布入口或 Rokid 硬件启动验证。
 
 只有第 16 步也通过，才算真正发布完成。
 
@@ -97,6 +99,7 @@ release/
 - 不要在核心页面使用 `min-height: 100vh` 作为主要布局。
 - 第一屏必须同时露出标题、状态和主按钮。
 - 横向布局优先，关键信息用短句。
+- 不要依赖鼠标精确点击；支持 `Enter`、`Backspace`、语音和短停留自动推进。
 - 动效和装饰只服务识别感，不占用主路径空间。
 - 每个页面的下一步按钮必须在 448x150 内可见。
 

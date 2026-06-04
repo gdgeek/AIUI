@@ -78,6 +78,11 @@ const PACK_FILES = [
     source: "docs/rokid/aiui-craft-lingzhu-end-to-end-zh.md",
     role: "Chinese end-to-end AIUI Craft/Lingzhu SOP for future projects",
   },
+  {
+    name: "13-rokid-glasses-device-constraints.md",
+    source: "docs/rokid/rokid-glasses-device-constraints.md",
+    role: "Rokid Glasses hardware parameters and AIUI design constraints",
+  },
 ];
 
 async function sha256File(filePath) {

@@ -27,6 +27,8 @@ Date: 2026-06-04
 - [x] Craft is opened with `defaultAgentId=7c5ebbe8edc04f1fa09b6bf9c59a3f26`
 - [x] Craft `提审` reaches the bound-agent confirmation flow
 - [x] The local app has a 448x150 viewport regression test
+- [x] Rokid Glasses hardware constraints are documented locally
+- [x] The local app has a glasses key and hands-free interaction regression test
 - [x] The latest local AIX candidate was rebuilt after the 448x150 viewport fix
 - [ ] Craft has re-imported the latest 448x150 source from GitHub
 - [ ] Craft runtime golden path is verified after the latest re-import

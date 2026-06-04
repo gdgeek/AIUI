@@ -61,6 +61,38 @@ export default {
     saved: false,
     expanded: false,
   },
+  onShow() {
+    this.deepDiveTimer = setTimeout(() => {
+      this.setData({
+        expanded: true,
+        saved: true,
+      });
+    }, 2200);
+
+    this.challengeTimer = setTimeout(() => {
+      this.goToChallenge();
+    }, 5200);
+  },
+  onHide() {
+    if (this.deepDiveTimer) {
+      clearTimeout(this.deepDiveTimer);
+      this.deepDiveTimer = null;
+    }
+
+    if (this.challengeTimer) {
+      clearTimeout(this.challengeTimer);
+      this.challengeTimer = null;
+    }
+  },
+  onKeyDown(event) {
+    if (event?.code === 'Enter') {
+      this.goToChallenge();
+    }
+
+    if (event?.code === 'Backspace') {
+      wx.navigateBack();
+    }
+  },
   toggleSaved() {
     this.setData({
       saved: !this.data.saved,
@@ -72,6 +104,11 @@ export default {
     });
   },
   goToChallenge() {
+    if (this.challengeTimer) {
+      clearTimeout(this.challengeTimer);
+      this.challengeTimer = null;
+    }
+
     wx.navigateTo({
       url: '/pages/challenge/index',
     });

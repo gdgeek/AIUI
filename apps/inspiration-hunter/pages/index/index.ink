@@ -38,7 +38,32 @@ export default {
     confidence: '92%',
     pulse: 'LOCKED',
   },
+  onShow() {
+    this.autoAdvanceTimer = setTimeout(() => {
+      this.beginDiscovery();
+    }, 2600);
+  },
+  onHide() {
+    if (this.autoAdvanceTimer) {
+      clearTimeout(this.autoAdvanceTimer);
+      this.autoAdvanceTimer = null;
+    }
+  },
+  onKeyDown(event) {
+    if (event?.code === 'Enter') {
+      this.beginDiscovery();
+    }
+
+    if (event?.code === 'Backspace') {
+      wx.exitMiniProgram();
+    }
+  },
   beginDiscovery() {
+    if (this.autoAdvanceTimer) {
+      clearTimeout(this.autoAdvanceTimer);
+      this.autoAdvanceTimer = null;
+    }
+
     wx.navigateTo({
       url: '/pages/discovery/index',
     });

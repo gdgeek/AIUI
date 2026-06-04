@@ -34,6 +34,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "10-demo-storyboard.svg",
     "11-aiui-craft-lingzhu-project-playbook.md",
     "12-aiui-craft-lingzhu-end-to-end-zh.md",
+    "13-rokid-glasses-device-constraints.md",
     "manifest.json",
   ];
 
@@ -51,7 +52,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.equal(manifest.project, "Inspiration Hunter");
   assert.equal(manifest.lingzhuAgentDraft.name, "InspirationHunter");
   assert.equal(manifest.uploadFiles.icon.sha256, "d007f489dfb4c3727b7e67552fe6255c21fdc624e5841dae550a92cc416c4ee1");
-  assert.equal(manifest.uploadFiles.aix.sha256, "ae4732fc3d506275730763d36c55e3eddf13b722e3a9593b7324cdcd13c26c12");
+  assert.equal(manifest.uploadFiles.aix.sha256, "e50f392e1fe659fcad8f26af29de9913bc90cbc8efe44613ef093455959c839f");
 
   const uploadGuide = await fs.readFile(path.join(outputDir, "00-UPLOAD-FIRST.txt"), "utf8");
   assert.match(uploadGuide, /图标/);
@@ -86,4 +87,13 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.match(chineseSop, /AIUI Craft Lingzhu End-to-End SOP/);
   assert.match(chineseSop, /448x150/);
   assert.match(chineseSop, /defaultAgentId/);
+
+  const deviceConstraints = await fs.readFile(
+    path.join(outputDir, "13-rokid-glasses-device-constraints.md"),
+    "utf8",
+  );
+  assert.match(deviceConstraints, /Rokid Glasses Device Constraints/);
+  assert.match(deviceConstraints, /49g/);
+  assert.match(deviceConstraints, /12MP/);
+  assert.match(deviceConstraints, /hands-free/);
 });
