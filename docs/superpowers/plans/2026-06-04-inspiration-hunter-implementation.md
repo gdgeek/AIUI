@@ -321,10 +321,9 @@ npm install
 
 Expected: the app becomes runnable locally without dependency errors.
 
-- [ ] **Step 2: Import the project into Craft**
+- [x] **Step 2: Import the project into Craft**
 
-Progress note: Craft account login is complete, and the GitHub 子目录 import path has been verified as the primary import route for the current session.
-Blocked note: Direct GitHub publication is not available yet because the current SSH push path cannot access `git@github.com:gdgeek/AIUI.git`; local folder authorization in Craft is the active unblock path.
+Progress note: Craft account login is complete, and the GitHub 子目录 import path has been verified successfully with `https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter`.
 
 Checklist:
 
@@ -338,6 +337,8 @@ Checklist:
 Expected: the project is visible and editable in Craft.
 
 - [ ] **Step 3: Verify the golden path visually**
+
+Progress note: Craft confirms all three pages as `Ready`, `运行智能体` initializes successfully, and the homepage preview renders. Full browser-driven end-to-end tapping remains only partially automatable because the preview surface behaves more like a canvas than regular DOM.
 
 Checklist:
 
@@ -375,7 +376,9 @@ aiui-aix --help
 
 Expected: one packaging route is confirmed by real command output.
 
-- [ ] **Step 2: Build the distributable**
+- [x] **Step 2: Build the distributable**
+
+Progress note: Craft `打包` has completed successfully with default options (`资源优化` on, `JSON 校验` on, `优化等级 Level 2`) and produced `gdgeek-AIUI-apps-inspiration-hunter.aix`. No working local CLI is currently available on `PATH`, so Craft remains the verified packaging route.
 
 Run the confirmed path, preferably:
 
@@ -391,7 +394,9 @@ aiui-aix pack --optimize -o inspiration-hunter.aix /Users/geek/Documents/AIUI/ap
 
 Expected: a valid `.aix` artifact is produced.
 
-- [ ] **Step 3: Publish the worktree to GitHub**
+- [x] **Step 3: Publish the worktree to GitHub**
+
+Progress note: the local initial commit `57472bd` (`feat: add inspiration hunter AIUI demo`) has been created successfully and published using SSH over port `443` to `ssh://git@ssh.github.com:443/gdgeek/AIUI.git`.
 
 Run:
 
@@ -403,9 +408,9 @@ git -C /Users/geek/Documents/AIUI push -u origin main
 
 Expected: the repo is published to the configured GitHub remote.
 
-- [ ] **Step 4: Document the deployment path**
+- [x] **Step 4: Document the deployment path**
 
-Progress note: Deployment guidance already exists in `docs/rokid/deployment-inspiration-hunter.md`; packaging and GitHub publication are the remaining release actions.
+Progress note: Deployment guidance has been updated in `docs/rokid/deployment-inspiration-hunter.md` to reflect the verified GitHub subdirectory import path, SSH-over-443 push route, and Craft-first packaging flow.
 
 Create:
 
