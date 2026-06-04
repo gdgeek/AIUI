@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/discovery/index",
+    "pages/challenge/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "Inspiration Hunter",
+    "viewport": {
+      "width": "device-width"
+    }
+  }
+}

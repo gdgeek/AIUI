@@ -1,0 +1,7 @@
+{
+  "name": "inspiration-hunter",
+  "version": "0.1.0",
+  "description": "A contest-ready immersive AIUI demo for Rokid glasses.",
+  "main": "app.js",
+  "dependencies": {}
+}
