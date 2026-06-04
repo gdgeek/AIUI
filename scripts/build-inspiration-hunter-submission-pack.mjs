@@ -39,6 +39,11 @@ const PACK_FILES = [
     role: "Judge Q&A, hardware-fit defense, and demo fallback script",
   },
   {
+    name: "03c-contest-day-brief.md",
+    source: "docs/contest/inspiration-hunter-contest-day-brief.md",
+    role: "Day-of-contest operating card for setup, demo timing, and fallback moves",
+  },
+  {
     name: "04-contest-submission.md",
     source: "docs/contest/inspiration-hunter-submission.md",
     role: "Judge-facing submission brief",

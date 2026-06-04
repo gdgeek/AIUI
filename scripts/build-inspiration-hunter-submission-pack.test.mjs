@@ -26,6 +26,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "03-InspirationHunter-pitch-deck.pptx",
     "03a-cn-judge-one-pager.md",
     "03b-award-defense.md",
+    "03c-contest-day-brief.md",
     "04-contest-submission.md",
     "05-demo-runbook.md",
     "06-release-checklist.md",
@@ -75,6 +76,12 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.match(awardDefense, /审核中/);
   assert.match(awardDefense, /Do not claim live camera recognition/);
   assert.match(awardDefense, /Demo Fallback Matrix/);
+
+  const contestDayBrief = await fs.readFile(path.join(outputDir, "03c-contest-day-brief.md"), "utf8");
+  assert.match(contestDayBrief, /Contest Day Brief/);
+  assert.match(contestDayBrief, /10-Minute Setup/);
+  assert.match(contestDayBrief, /If Lingzhu remains `审核中`/);
+  assert.match(contestDayBrief, /Evidence Pointers/);
 
   const storyboard = await fs.readFile(path.join(outputDir, "10-demo-storyboard.svg"), "utf8");
   assert.match(storyboard, /<svg/);

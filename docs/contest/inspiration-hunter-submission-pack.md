@@ -36,21 +36,22 @@ Use this order when submitting or uploading:
 4. `03-InspirationHunter-pitch-deck.pptx`
 5. `03a-cn-judge-one-pager.md`
 6. `03b-award-defense.md`
-7. `04-contest-submission.md`
-8. `05-demo-runbook.md`
-9. `06-release-checklist.md`
-10. `07-judge-scorecard.md`
-11. `08-final-release-evidence.md`
-12. `09-lingzhu-aiui-release-handoff.md`
-13. `10-demo-storyboard.svg`
-14. `11-aiui-craft-lingzhu-project-playbook.md`
-15. `12-aiui-craft-lingzhu-end-to-end-zh.md`
-16. `13-rokid-glasses-device-constraints.md`
-17. `14-post-review-launch-checklist.md`
-18. `15-craft-glasses-discovery.png`
-19. `16-craft-glasses-final.png`
-20. `17-lingzhu-review-status.png`
-21. `manifest.json`
+7. `03c-contest-day-brief.md`
+8. `04-contest-submission.md`
+9. `05-demo-runbook.md`
+10. `06-release-checklist.md`
+11. `07-judge-scorecard.md`
+12. `08-final-release-evidence.md`
+13. `09-lingzhu-aiui-release-handoff.md`
+14. `10-demo-storyboard.svg`
+15. `11-aiui-craft-lingzhu-project-playbook.md`
+16. `12-aiui-craft-lingzhu-end-to-end-zh.md`
+17. `13-rokid-glasses-device-constraints.md`
+18. `14-post-review-launch-checklist.md`
+19. `15-craft-glasses-discovery.png`
+20. `16-craft-glasses-final.png`
+21. `17-lingzhu-review-status.png`
+22. `manifest.json`
 
 ## Lingzhu Upload Fields
 
@@ -75,6 +76,8 @@ Use `03a-cn-judge-one-pager.md` when the reviewer or event context is Chinese-fi
 - the closing line for live presentation
 
 Use `03b-award-defense.md` as the hard-question playbook. It covers why the app can win, how to explain the semi-real recognition strategy, how the design maps to Rokid Glasses hardware constraints, and what not to claim while Lingzhu remains `审核中`.
+
+Use `03c-contest-day-brief.md` on the actual contest day. It is the fastest setup card: 10-minute prep, 60-second run of show, exact `审核中` wording, fallback moves, and evidence pointers.
 
 Use `10-demo-storyboard.svg` as a visual companion when reviewers need to understand the app before opening Craft. It is a storyboard derived from the implemented demo flow, not a device screenshot.
 

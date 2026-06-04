@@ -69,6 +69,7 @@ Current online status:
 - `docs/contest/inspiration-hunter-final-release-evidence.md`: exact manual upload and screenshot checklist
 - `docs/contest/inspiration-hunter-judge-scorecard.md`: judge-facing score map and verified claims
 - `docs/contest/inspiration-hunter-award-defense.md`: judge Q&A, hardware-fit defense, and demo fallback script
+- `docs/contest/inspiration-hunter-contest-day-brief.md`: day-of-contest setup card, run of show, and fallback moves
 - `docs/contest/inspiration-hunter-release-manifest.json`: SHA-256 hashes and upload metadata for the final release files
 - `docs/rokid/aiui-craft-lingzhu-end-to-end-zh.md`: Chinese end-to-end SOP for future AIUI projects
 - `docs/rokid/rokid-glasses-device-constraints.md`: Rokid Glasses parameters and AIUI design implications
