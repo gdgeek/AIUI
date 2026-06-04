@@ -1,0 +1,33 @@
+name: Release Verify
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  verify-inspiration-hunter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install AIX reader
+        run: npm install @yodaos-pkg/aix@0.6.0 --no-save --no-package-lock
+
+      - name: Install zip
+        run: |
+          if ! command -v zip >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y zip
+          fi
+
+      - name: Verify Inspiration Hunter release package
+        run: node scripts/verify-inspiration-hunter-release.mjs

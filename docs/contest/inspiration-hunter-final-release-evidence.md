@@ -29,6 +29,22 @@ node /Users/geek/Documents/AIUI/scripts/verify-inspiration-hunter-release.mjs
 
 The command must print `"ok": true` before final upload.
 
+Remote repository verification:
+
+```text
+.github/workflows/release-verify.yml
+```
+
+The workflow rebuilds the AIX candidate from tracked source and runs the same verifier on GitHub Actions.
+
+Local CI-path simulation:
+
+```bash
+AIX_VERIFY_REBUILD=1 node /Users/geek/Documents/AIUI/scripts/verify-inspiration-hunter-release.mjs
+```
+
+This mode ignores the existing local `artifacts/` package and rebuilds a temporary AIX from tracked source.
+
 ## Current Lingzhu Form State
 
 The open Lingzhu AIUI creation dialog is prepared with:
