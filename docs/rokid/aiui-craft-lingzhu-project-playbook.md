@@ -174,14 +174,13 @@ If Craft still shows stale source after a GitHub push:
 
 1. Click `重新加载当前工程`.
 2. Re-import the same GitHub subdirectory URL.
-3. If the main branch still appears stale, import a commit-specific URL:
+3. If the main branch still appears stale, reopen the GitHub 子目录 import form and confirm the same `main` URL again. In the `Inspiration Hunter` release pass, this was more reliable than relying on `重新加载当前工程` alone.
+4. Treat a commit-specific URL as experimental only; some Craft sessions may not parse a full commit SHA inside `/tree/<commit-sha>/...`.
+5. Run again and capture a screenshot before continuing to package or review.
 
 ```text
-https://github.com/<owner>/<repo>/tree/<commit-sha>/apps/<project-name>
+https://github.com/<owner>/<repo>/tree/main/apps/<project-name>
 ```
-
-4. Open the changed `.ink` file in Craft and confirm the source contains the latest layout.
-5. Run again and capture a screenshot before continuing to package or review.
 
 ## Packaging
 

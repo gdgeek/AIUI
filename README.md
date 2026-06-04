@@ -53,7 +53,8 @@ Current online status:
 - Craft `提审` reaches step 2 with the correct bound agent.
 - The latest local AIX was rebuilt after the 448x150 Craft preview fix.
 - Rokid Glasses hardware constraints are documented and now drive interaction design.
-- Final Craft re-import/runtime testing, possible AIX re-upload, and `提交提审` are the remaining release gates.
+- Craft was re-imported from GitHub `main` after the glasses interaction fix, and the hands-free golden path was visually verified.
+- Possible latest AIX re-upload, `提交提审`, and target-device launch verification are the remaining release gates.
 
 ## Reusable Skills
 

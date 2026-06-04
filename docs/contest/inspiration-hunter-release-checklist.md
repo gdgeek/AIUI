@@ -30,8 +30,8 @@ Date: 2026-06-04
 - [x] Rokid Glasses hardware constraints are documented locally
 - [x] The local app has a glasses key and hands-free interaction regression test
 - [x] The latest local AIX candidate was rebuilt after the 448x150 viewport fix
-- [ ] Craft has re-imported the latest 448x150 source from GitHub
-- [ ] Craft runtime golden path is verified after the latest re-import
+- [x] Craft has re-imported the latest 448x150 source from GitHub
+- [x] Craft runtime golden path is verified after the latest re-import
 - [ ] Craft `提交提审` succeeds
 - [ ] Device-side launch is verified on target Rokid hardware
 
@@ -101,11 +101,14 @@ Do not call the project fully published until these are true:
 
 ## Current Release Gate
 
-The Lingzhu file upload and agent creation steps are complete. The remaining release gate is to make Craft load the latest pushed 448x150 source, run the golden path visually, then submit review from the bound `defaultAgentId` session.
+The Lingzhu file upload and agent creation steps are complete. Craft now loads the latest pushed 448x150 source and the visual golden path has been verified. The remaining release gate is to ensure the latest AIX is uploaded or packaged into the bound Lingzhu agent, submit review from the `defaultAgentId` session, then verify launch on a target Rokid device or official release surface.
 
 Current verification pass:
 
-- 2026-06-04: re-import the latest GitHub source in Craft, then verify the 448x150 runtime before checking off the remaining release items.
+- 2026-06-04: pushed commit `988f3d8` to GitHub `main`, re-imported `https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter` through Craft's GitHub 子目录 form, clicked `运行智能体`, and visually verified the hands-free glasses flow from discovery to challenge completion.
+- Screenshots saved locally:
+  - `/Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-discovery.png`
+  - `/Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-final.png`
 
 If Craft still shows the old tall layout, re-import:
 
@@ -113,8 +116,4 @@ If Craft still shows the old tall layout, re-import:
 https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter
 ```
 
-If `main` is cached, use the known good commit:
-
-```text
-https://github.com/gdgeek/AIUI/tree/e1b20367525db061a7e658e8b69fc6ca69ddbab9/apps/inspiration-hunter
-```
+If `main` is cached, prefer reopening the GitHub 子目录 import form and confirming the same `main` URL again. In this Craft session, `重新加载当前工程` did not prove enough by itself, but a fresh GitHub 子目录 import did.

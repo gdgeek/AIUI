@@ -158,14 +158,13 @@ git push origin main
 
 1. 点击重新加载当前工程。
 2. 再次用 GitHub 子目录导入同一个 main URL。
-3. 仍然不行时，用具体 commit URL 导入：
+3. 仍然不行时，重新打开 GitHub 子目录导入表单，再确认同一个 main URL；`Inspiration Hunter` 最终就是靠这个动作刷新到了最新源码。
+4. 具体 commit URL 只作为实验兜底，不要默认依赖它，因为 Craft 可能无法解析完整 commit SHA 的 `/tree/<commit-sha>/...` 地址。
+5. 重新运行智能体并截图确认。
 
 ```text
-https://github.com/<owner>/<repo>/tree/<commit-sha>/apps/<project-name>
+https://github.com/<owner>/<repo>/tree/main/apps/<project-name>
 ```
-
-4. 打开 `.ink` 文件检查源码是否已经是最新。
-5. 重新运行智能体并截图确认。
 
 ## 6. Craft 打包
 

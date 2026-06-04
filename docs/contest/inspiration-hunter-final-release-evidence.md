@@ -80,6 +80,19 @@ sha256: e50f392e1fe659fcad8f26af29de9913bc90cbc8efe44613ef093455959c839f
 bytes: 211055
 ```
 
+Current Craft runtime evidence after the Rokid Glasses interaction fix:
+
+```text
+GitHub commit pushed to main: 988f3d8
+Craft import URL: https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter
+Craft status: 初始化成功 · 最新
+Observed flow: discovery screen auto-opened, challenge answer auto-revealed, final status showed 已完成
+Screenshot: /Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-discovery.png
+Screenshot: /Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-final.png
+```
+
+Important caveat: the Lingzhu upload record above still references the older uploaded package MD5. Before final `提交提审`, re-upload or re-package the latest AIX if Craft/Lingzhu has not already attached the current package.
+
 ## Final Release Steps
 
 1. In Craft, re-import the GitHub subdirectory if the preview still shows the old tall layout.
