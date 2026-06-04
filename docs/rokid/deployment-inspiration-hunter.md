@@ -200,8 +200,21 @@ Use these files for submission and presentation:
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-demo-runbook.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.pptx`
+- `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission-pack.md`
 - `/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-checklist.md`
 - `/Users/geek/Documents/AIUI/docs/rokid/lingzhu-aiui-release-handoff.md`
+
+To create a local upload/submission bundle with short file names:
+
+```bash
+node /Users/geek/Documents/AIUI/scripts/build-inspiration-hunter-submission-pack.mjs
+```
+
+Generated folder:
+
+```text
+/Users/geek/Documents/AIUI/release/inspiration-hunter-submission-pack
+```
 
 ## Fast Recovery Checklist
 

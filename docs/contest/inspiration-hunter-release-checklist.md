@@ -60,7 +60,9 @@ gdgeek-AIUI-apps-inspiration-hunter.aix
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-judge-scorecard.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-pitch-deck.pptx
+/Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-submission-pack.md
 /Users/geek/Documents/AIUI/docs/contest/inspiration-hunter-release-manifest.json
+/Users/geek/Documents/AIUI/scripts/build-inspiration-hunter-submission-pack.mjs
 /Users/geek/Documents/AIUI/scripts/verify-inspiration-hunter-release.mjs
 /Users/geek/Documents/AIUI/.github/workflows/release-verify.yml
 ```

@@ -1,0 +1,58 @@
+# Inspiration Hunter Submission Pack
+
+Date: 2026-06-04
+
+This document describes the local package prepared for final Lingzhu upload and contest submission.
+
+## Build Command
+
+```bash
+node /Users/geek/Documents/AIUI/scripts/build-inspiration-hunter-submission-pack.mjs
+```
+
+## Output
+
+Folder:
+
+```text
+/Users/geek/Documents/AIUI/release/inspiration-hunter-submission-pack
+```
+
+Zip archive:
+
+```text
+/Users/geek/Documents/AIUI/release/inspiration-hunter-submission-pack.zip
+```
+
+The `release/` directory is intentionally ignored by Git because it contains generated local upload bundles and the `.aix` package copy.
+
+## File Order
+
+Use this order when submitting or uploading:
+
+1. `00-UPLOAD-FIRST.txt`
+2. `01-InspirationHunter-icon.png`
+3. `02-InspirationHunter-v0.1.0.aix`
+4. `03-InspirationHunter-pitch-deck.pptx`
+5. `04-contest-submission.md`
+6. `05-demo-runbook.md`
+7. `06-release-checklist.md`
+8. `07-judge-scorecard.md`
+9. `08-final-release-evidence.md`
+10. `09-lingzhu-aiui-release-handoff.md`
+11. `manifest.json`
+
+## Lingzhu Upload Fields
+
+Use these exact files in the Lingzhu AIUI form:
+
+```text
+图标*: 01-InspirationHunter-icon.png
+agent程序包: 02-InspirationHunter-v0.1.0.aix
+```
+
+The pack builder verifies these files against `docs/contest/inspiration-hunter-release-manifest.json` before writing the bundle.
+
+## Why This Pack Exists
+
+The Codex in-app browser cannot attach local files through the platform file picker. This pack makes the remaining manual step safer by copying the required upload files into a single folder with short, obvious names.
