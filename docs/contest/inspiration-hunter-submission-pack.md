@@ -77,6 +77,8 @@ Use `12-aiui-craft-lingzhu-end-to-end-zh.md` as the Chinese SOP for future proje
 
 Use `13-rokid-glasses-device-constraints.md` before designing the next AIUI app. It turns Rokid Glasses hardware parameters into UI, interaction, and demo constraints.
 
+Use `14-craft-glasses-discovery.png`, `15-craft-glasses-final.png`, and `16-lingzhu-review-status.png` as visual evidence: Craft runtime discovery, Craft runtime challenge completion, and Lingzhu `审核中` status.
+
 ## Why This Pack Exists
 
 The Codex in-app browser cannot attach local files through the platform file picker. This pack makes the remaining manual step safer by copying the required upload files into a single folder with short, obvious names.

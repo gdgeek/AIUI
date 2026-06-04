@@ -83,6 +83,21 @@ const PACK_FILES = [
     source: "docs/rokid/rokid-glasses-device-constraints.md",
     role: "Rokid Glasses hardware parameters and AIUI design constraints",
   },
+  {
+    name: "14-craft-glasses-discovery.png",
+    source: "docs/contest/evidence/craft-glasses-discovery.png",
+    role: "Craft runtime screenshot: discovery screen in the 448x150 glasses preview",
+  },
+  {
+    name: "15-craft-glasses-final.png",
+    source: "docs/contest/evidence/craft-glasses-final.png",
+    role: "Craft runtime screenshot: challenge completion in the 448x150 glasses preview",
+  },
+  {
+    name: "16-lingzhu-review-status.png",
+    source: "docs/contest/evidence/lingzhu-review-status.png",
+    role: "Lingzhu AIUI list screenshot showing InspirationHunter in review",
+  },
 ];
 
 async function sha256File(filePath) {

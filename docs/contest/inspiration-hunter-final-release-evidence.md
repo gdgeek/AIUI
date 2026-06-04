@@ -91,7 +91,21 @@ Screenshot: /Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-disco
 Screenshot: /Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-final.png
 ```
 
-Important caveat: the Lingzhu upload record above still references the older uploaded package MD5. Before final `提交提审`, re-upload or re-package the latest AIX if Craft/Lingzhu has not already attached the current package.
+Current Craft upload and review evidence:
+
+```text
+Craft directory binding: github:gdgeek/AIUI#main:apps/inspiration-hunter -> InspirationHunter
+Craft package result: gdgeek-AIUI-apps-inspiration-hunter.aix · 219 KB
+Lingzhu upload target: InspirationHunter
+Lingzhu upload version: 1.0.1
+Upload result text: 上传成功！智能体已更新到灵珠。
+Review target after refresh: InspirationHunter · 版本 1.0.1 · ID 7c5ebbe8edc04f1fa09b6bf9c59a3f26
+Review result text: 提审成功，灵珠后台已收到本次提审请求。
+Lingzhu list status: InspirationHunter · 审核中
+Screenshot: /Users/geek/Documents/AIUI/docs/contest/evidence/lingzhu-review-status.png
+```
+
+Important caveat: after uploading `1.0.1`, Craft still showed the stale review target `版本 1.0.0` until `设置 -> 本地目录 -> 刷新绑定` was clicked and settings were saved. Do not submit review before the review target shows the newly uploaded version.
 
 ## Final Release Steps
 
@@ -100,13 +114,13 @@ Important caveat: the Lingzhu upload record above still references the older upl
 3. Capture the home preview showing the 448x150 layout with the primary action visible.
 4. Run the golden path: scan -> discovery -> challenge -> reveal answer.
 5. Rebuild/package again if Craft requires packaging from the latest imported source.
-6. Re-upload the latest AIX to Lingzhu if the platform does not automatically use the latest Craft package.
-7. Open `提审` in the `defaultAgentId` Craft session.
-8. Confirm the bound agent is `InspirationHunter`.
-9. Fill version notes.
-10. Click `提交提审`.
-11. Capture the success message or review status.
-12. Verify the uploaded build in Lingzhu or on target Rokid hardware.
+6. Re-upload the latest AIX to Lingzhu if the platform does not automatically use the latest Craft package. Completed for version `1.0.1`.
+7. Open `提审` in the `defaultAgentId` Craft session. Completed.
+8. Confirm the bound agent is `InspirationHunter`. Completed.
+9. Fill version notes. Completed.
+10. Click `提交提审`. Completed.
+11. Capture the success message or review status. Completed with Lingzhu `审核中` screenshot.
+12. Verify the uploaded build in Lingzhu or on target Rokid hardware. Lingzhu review-state evidence exists; target device launch still pending.
 
 If the Lingzhu agent ever needs to be recreated, use the upload recovery steps in:
 
@@ -119,7 +133,7 @@ If the Lingzhu agent ever needs to be recreated, use the upload recovery steps i
 Capture these screenshots or notes:
 
 - Lingzhu AIUI agent list showing `InspirationHunter`.
-- Lingzhu agent detail page showing version `1.0.0`.
+- Lingzhu agent detail page showing version `1.0.1`.
 - Upload record or package status showing the AIX was accepted.
 - Craft source or import state showing the latest GitHub source is loaded.
 - Craft preview showing the compact 448x150 home layout with `开始解析` visible.

@@ -286,6 +286,19 @@ Acceptance evidence:
 - Craft `提审` panel shows the current bound agent.
 - Agent title, version, description, icon, and ID match the Lingzhu record.
 
+When uploading a new AIX from Craft after the agent already exists:
+
+1. Open `设置` -> `本地目录`.
+2. Select the Lingzhu AIUI agent and click `绑定当前目录` if needed.
+3. Save settings.
+4. Open `打包`, build the AIX, then click `上传到灵珠`.
+5. Increment the upload version, for example from `1.0.0` to `1.0.1`.
+6. Confirm upload and wait for the success message.
+7. Return to `设置` -> `本地目录`, click `刷新绑定`, then save settings again.
+8. Open `提审` only after the review target shows the newly uploaded version.
+
+Important gotcha from `Inspiration Hunter`: Craft can keep stale bound-agent metadata after upload. The first review attempt still showed `版本 1.0.0` after uploading `1.0.1`, and the backend logged a version validation error. `刷新绑定` updated the review target to `版本 1.0.1`, after which `提交提审` succeeded.
+
 ## Review Submission
 
 In Craft:

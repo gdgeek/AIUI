@@ -35,6 +35,9 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "11-aiui-craft-lingzhu-project-playbook.md",
     "12-aiui-craft-lingzhu-end-to-end-zh.md",
     "13-rokid-glasses-device-constraints.md",
+    "14-craft-glasses-discovery.png",
+    "15-craft-glasses-final.png",
+    "16-lingzhu-review-status.png",
     "manifest.json",
   ];
 

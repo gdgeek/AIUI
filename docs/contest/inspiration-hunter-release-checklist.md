@@ -32,7 +32,7 @@ Date: 2026-06-04
 - [x] The latest local AIX candidate was rebuilt after the 448x150 viewport fix
 - [x] Craft has re-imported the latest 448x150 source from GitHub
 - [x] Craft runtime golden path is verified after the latest re-import
-- [ ] Craft `提交提审` succeeds
+- [x] Craft `提交提审` succeeds
 - [ ] Device-side launch is verified on target Rokid hardware
 
 ## Required Craft Import URL
@@ -101,14 +101,17 @@ Do not call the project fully published until these are true:
 
 ## Current Release Gate
 
-The Lingzhu file upload and agent creation steps are complete. Craft now loads the latest pushed 448x150 source and the visual golden path has been verified. The remaining release gate is to ensure the latest AIX is uploaded or packaged into the bound Lingzhu agent, submit review from the `defaultAgentId` session, then verify launch on a target Rokid device or official release surface.
+The Lingzhu file upload and agent creation steps are complete. Craft now loads the latest pushed 448x150 source, the visual golden path has been verified, the latest Craft-built AIX was uploaded to the bound Lingzhu AIUI agent as version `1.0.1`, and Craft `提交提审` succeeded. The remaining release gate is to verify launch on a target Rokid device or official release surface after review state permits it.
 
 Current verification pass:
 
 - 2026-06-04: pushed commit `988f3d8` to GitHub `main`, re-imported `https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter` through Craft's GitHub 子目录 form, clicked `运行智能体`, and visually verified the hands-free glasses flow from discovery to challenge completion.
+- 2026-06-04: bound the Craft GitHub directory key `github:gdgeek/AIUI#main:apps/inspiration-hunter` to Lingzhu AIUI agent `InspirationHunter`, rebuilt the AIX in Craft with default package settings, uploaded it to Lingzhu as version `1.0.1`, refreshed the Craft binding so the review target showed `版本 1.0.1`, and submitted review successfully.
+- 2026-06-04: Lingzhu `AIUI智能体` list shows `InspirationHunter` with status `审核中`.
 - Screenshots saved locally:
   - `/Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-discovery.png`
   - `/Users/geek/Documents/AIUI/docs/contest/evidence/craft-glasses-final.png`
+  - `/Users/geek/Documents/AIUI/docs/contest/evidence/lingzhu-review-status.png`
 
 If Craft still shows the old tall layout, re-import:
 

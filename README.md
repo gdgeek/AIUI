@@ -54,7 +54,9 @@ Current online status:
 - The latest local AIX was rebuilt after the 448x150 Craft preview fix.
 - Rokid Glasses hardware constraints are documented and now drive interaction design.
 - Craft was re-imported from GitHub `main` after the glasses interaction fix, and the hands-free golden path was visually verified.
-- Possible latest AIX re-upload, `提交提审`, and target-device launch verification are the remaining release gates.
+- Craft rebuilt the latest AIX, uploaded it to the bound Lingzhu AIUI agent as version `1.0.1`, and `提交提审` succeeded.
+- Lingzhu now shows `InspirationHunter` under `AIUI智能体` with status `审核中`.
+- Target-device or official launch-surface verification is the remaining release gate.
 
 ## Reusable Skills
 
