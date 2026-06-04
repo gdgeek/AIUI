@@ -4,6 +4,12 @@ Date: 2026-06-04
 
 This document is the shortest path from the current Craft package state to an online Lingzhu AIUI release for `Inspiration Hunter`.
 
+For the reusable end-to-end workflow, use:
+
+```text
+/Users/geek/Documents/AIUI/docs/rokid/aiui-craft-lingzhu-project-playbook.md
+```
+
 ## Current Online State
 
 Craft has already imported, run, previewed, and packaged the app from:
@@ -12,10 +18,25 @@ Craft has already imported, run, previewed, and packaged the app from:
 https://github.com/gdgeek/AIUI/tree/main/apps/inspiration-hunter
 ```
 
-The Lingzhu AIUI creation dialog has been reached from:
+The Lingzhu AIUI creation dialog was reached from:
 
 ```text
 https://rizon.rokid.com/space/7578750283849662464/develop
+```
+
+The AIUI agent was created successfully and Craft reopened with the bound ID:
+
+```text
+https://js.rokid.com/craft?defaultAgentId=7c5ebbe8edc04f1fa09b6bf9c59a3f26
+```
+
+Current agent status:
+
+```text
+智能体名称: InspirationHunter
+智能体版本: 1.0.0
+Lingzhu agent ID: 7c5ebbe8edc04f1fa09b6bf9c59a3f26
+Craft review flow: Step 2/2, ready for version notes and 提交提审 after final runtime testing
 ```
 
 The form accepts:
@@ -71,14 +92,21 @@ Rationale: the current demo is deterministic, but the product direction is camer
 
 Current browser session status:
 
-- the Lingzhu AIUI creation dialog is open
-- the text fields are filled with the recommended values
-- category `娱乐` is selected
-- the four recommended permissions are checked
-- the icon preview is visible in the form
-- the remaining release blocker is the local `.aix` agent package upload
+- the Lingzhu AIUI creation form has been submitted successfully
+- Craft is open with the bound Lingzhu agent ID
+- Craft `提审` has confirmed the bound target
+- the current open review panel is on `步骤 2/2`
+- final runtime testing should happen before clicking `提交提审`
 
-After the `.aix` package is uploaded, Lingzhu should parse and populate `文件md5值`, `jsui包标题`, `jsui包版本`, `jsui包页面`, and `jsui包工具`. Do not submit the form until those disabled parse fields are non-empty.
+The uploaded `.aix` package produced these Lingzhu parse values:
+
+```text
+文件md5值: d032ae84aff3df9be8732cef53f0768d
+jsui包标题: Inspiration Hunter
+jsui包版本: 0.1.0
+jsui包页面: pages/index/index, pages/discovery/index, pages/challenge/index
+jsui包工具: generated for all three AIUI pages
+```
 
 ## Codex Browser Upload Limitation
 
@@ -95,18 +123,20 @@ Use this exact file for the `agent程序包` picker:
 /Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix
 ```
 
-## Manual Upload Steps
+## Manual Upload Steps For Recovery
 
-Codex's in-app browser can read the form, fill ordinary fields, and check permissions, but it cannot attach local files through the system file picker without OS-level permission. Finish the package field with one manual file selection if Accessibility automation is not available:
+Codex's in-app browser can read the form, fill ordinary fields, and check permissions, but it cannot attach local files through the system file picker without OS-level permission. If the Lingzhu agent ever needs to be recreated, finish the package field with one manual file selection if Accessibility automation is not available:
 
 1. Upload `artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix` into `agent程序包`.
 2. Confirm Lingzhu fills `文件md5值`, `jsui包标题`, `jsui包版本`, `jsui包页面`, and `jsui包工具`.
 3. Confirm the four permissions are checked.
 4. Submit the AIUI agent creation form.
-5. Return to Craft.
-6. Bind the newly created Lingzhu AIUI agent.
-7. Click `上传到灵珠`.
-8. Verify launch from the Lingzhu console or target Rokid hardware.
+5. Return to Craft and confirm the URL contains `defaultAgentId=<agent-id>`.
+6. Open `提审`.
+7. Confirm the bound agent in step 1.
+8. Fill version notes in step 2.
+9. Click `提交提审` only after final runtime testing.
+10. Verify launch from the Lingzhu console or target Rokid hardware.
 
 ## Acceptance Gate
 
@@ -115,4 +145,5 @@ Do not mark the project fully published until all of these are true:
 - the AIUI agent exists in Lingzhu
 - the AIX package has been uploaded to that agent
 - Craft no longer blocks upload with `请先绑定灵珠智能体`
+- Craft `提审` returns a success message
 - the app can launch from the official release surface or target device

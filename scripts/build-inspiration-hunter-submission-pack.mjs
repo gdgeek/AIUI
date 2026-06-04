@@ -68,6 +68,11 @@ const PACK_FILES = [
     source: "docs/contest/inspiration-hunter-demo-storyboard.svg",
     role: "Visual storyboard of the three-screen demo arc",
   },
+  {
+    name: "11-aiui-craft-lingzhu-project-playbook.md",
+    source: "docs/rokid/aiui-craft-lingzhu-project-playbook.md",
+    role: "Reusable AIUI Craft/Lingzhu development and release playbook",
+  },
 ];
 
 async function sha256File(filePath) {

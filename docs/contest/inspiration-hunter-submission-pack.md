@@ -42,7 +42,8 @@ Use this order when submitting or uploading:
 10. `08-final-release-evidence.md`
 11. `09-lingzhu-aiui-release-handoff.md`
 12. `10-demo-storyboard.svg`
-13. `manifest.json`
+13. `11-aiui-craft-lingzhu-project-playbook.md`
+14. `manifest.json`
 
 ## Lingzhu Upload Fields
 
@@ -67,6 +68,8 @@ Use `03a-cn-judge-one-pager.md` when the reviewer or event context is Chinese-fi
 - the closing line for live presentation
 
 Use `10-demo-storyboard.svg` as a visual companion when reviewers need to understand the app before opening Craft. It is a storyboard derived from the implemented demo flow, not a device screenshot.
+
+Use `11-aiui-craft-lingzhu-project-playbook.md` as the reusable process record for future AIUI projects. It captures the exact Craft, Lingzhu, native file picker, binding, review, and testing gates that prevented detours in this project.
 
 ## Why This Pack Exists
 

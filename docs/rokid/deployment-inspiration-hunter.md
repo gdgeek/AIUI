@@ -14,11 +14,16 @@ Date: 2026-06-04
 - a local AIX candidate exists at `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix`
 - a Lingzhu-compatible PNG icon exists at `/Users/geek/Documents/AIUI/apps/inspiration-hunter/assets/icon.png`
 - all three pages expose AIUI `description` and `schema.data` metadata for cleaner tool generation
+- the Lingzhu AIUI agent has been created successfully
+- Craft reopened with the bound Lingzhu agent ID in `defaultAgentId`
+- Craft `提审` reaches the bound-agent confirmation flow
 
 Current known limitations:
 
 - Craft preview renders the app correctly, but the embedded preview surface is canvas-like, so full browser automation of every in-app tap is less reliable than normal DOM testing.
-- Codex's in-app browser cannot reliably download Craft-generated files or attach local files through the system file picker. The current Lingzhu form already has the text fields, category, permissions, and icon ready; the remaining external blocker is selecting the local AIX package once.
+- Codex's in-app browser cannot reliably download Craft-generated files or attach local files through the system file picker. The reliable workaround is a one-time manual file picker selection followed by automated state verification.
+
+Reusable full-process playbook: `/Users/geek/Documents/AIUI/docs/rokid/aiui-craft-lingzhu-project-playbook.md`
 
 ## Project Files
 
@@ -141,11 +146,22 @@ Use these local files:
 
 Current Lingzhu upload status:
 
-- icon: visible in the creation form
+- icon: uploaded and visible in the creation form
+- package: uploaded and parsed by Lingzhu
 - permissions: `网络`, `摄像头`, `语音识别`, and `麦克风` checked
-- package: waiting for `/Users/geek/Documents/AIUI/artifacts/gdgeek-AIUI-apps-inspiration-hunter.aix`
+- agent creation: successful
+- Lingzhu agent ID: `7c5ebbe8edc04f1fa09b6bf9c59a3f26`
+- Craft bound URL: `https://js.rokid.com/craft?defaultAgentId=7c5ebbe8edc04f1fa09b6bf9c59a3f26`
 
-After selecting the package, verify Lingzhu fills the disabled parse fields for md5, title, version, pages, and tools before clicking `确认`.
+The uploaded package produced these parse signals in Lingzhu:
+
+```text
+文件md5值: d032ae84aff3df9be8732cef53f0768d
+jsui包标题: Inspiration Hunter
+jsui包版本: 0.1.0
+jsui包页面: pages/index/index, pages/discovery/index, pages/challenge/index
+jsui包工具: generated for all three AIUI pages
+```
 
 Recommended form values:
 
@@ -167,6 +183,8 @@ Recommended permissions:
 ```
 
 Detailed handoff: `/Users/geek/Documents/AIUI/docs/rokid/lingzhu-aiui-release-handoff.md`
+
+Reusable process guide: `/Users/geek/Documents/AIUI/docs/rokid/aiui-craft-lingzhu-project-playbook.md`
 
 ## Optional Local CLI Checks
 

@@ -32,6 +32,7 @@ test("createSubmissionPack copies upload assets and contest materials with verif
     "08-final-release-evidence.md",
     "09-lingzhu-aiui-release-handoff.md",
     "10-demo-storyboard.svg",
+    "11-aiui-craft-lingzhu-project-playbook.md",
     "manifest.json",
   ];
 
@@ -68,4 +69,12 @@ test("createSubmissionPack copies upload assets and contest materials with verif
   assert.match(storyboard, /REVEAL/);
   assert.match(storyboard, /CHALLENGE/);
   assert.match(storyboard, /银翼猎影海报/);
+
+  const playbook = await fs.readFile(
+    path.join(outputDir, "11-aiui-craft-lingzhu-project-playbook.md"),
+    "utf8",
+  );
+  assert.match(playbook, /Golden Path/);
+  assert.match(playbook, /File Picker Reality/);
+  assert.match(playbook, /Review Submission/);
 });

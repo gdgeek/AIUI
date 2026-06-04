@@ -10,6 +10,12 @@ Contest-ready Rokid AIUI demos and working notes.
 - `docs/superpowers`: design specs and implementation plans
 - `skills`: reusable Rokid AIUI development, release, and contest-polish workflows
 
+Reusable end-to-end project playbook:
+
+```text
+docs/rokid/aiui-craft-lingzhu-project-playbook.md
+```
+
 ## Current Demo
 
 `Inspiration Hunter` is a semi-real immersive AIUI app. It uses a deterministic hero scenario to make the contest demo reliable while presenting the product as a future-facing AI glasses discovery experience.
@@ -35,7 +41,15 @@ Local release assets:
 
 ## Publish Status
 
-Craft import, run, preview, and package build have been verified. The repository remote is configured for SSH over port `443` at `ssh://git@ssh.github.com:443/gdgeek/AIUI.git`. The remaining online release step is binding or creating a Lingzhu AIUI agent in Craft/Lingzhu, then uploading the icon and AIX package.
+Craft import, run, preview, and package build have been verified. The repository remote is configured for SSH over port `443` at `ssh://git@ssh.github.com:443/gdgeek/AIUI.git`.
+
+Current online status:
+
+- Lingzhu AIUI agent `InspirationHunter` has been created.
+- Agent ID: `7c5ebbe8edc04f1fa09b6bf9c59a3f26`.
+- Craft opens with `defaultAgentId=7c5ebbe8edc04f1fa09b6bf9c59a3f26`.
+- Craft `提审` reaches step 2 with the correct bound agent.
+- Final runtime testing and `提交提审` are the remaining release gates.
 
 ## Reusable Skills
 
